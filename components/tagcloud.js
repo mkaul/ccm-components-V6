@@ -27,8 +27,11 @@ ccm.component( {
     store: [ ccm.store, './json/tagcloud.json' ],
     style: [ ccm.load, './css/tagcloud.css' ],
     defaults: {
-      size: {start: 14, end: 18, unit: 'pt'},
-      color: {start: '#cde', end: '#f52'}
+      size: {start: 8, end: 56, unit: 'pt'},
+      color: {start: '#a00', end: '#fed'}
+    },
+    link: function(term){
+      return './demo_mkaul.html#' + term;
     },
 
     // https://github.com/addywaddy/jquery.tagcloud.js
@@ -91,7 +94,7 @@ ccm.component( {
 
         for (var term in dataset){
           // <a href="/path" rel="7">peace</a>
-          html_structure.inner.push({tag:'a',href:'/path',rel:dataset[term], inner:term});
+          html_structure.inner.push({tag:'a',href:self.link(term) ,rel:dataset[term], inner:term});
         }
 
         element.html( ccm.helper.html( html_structure ) );

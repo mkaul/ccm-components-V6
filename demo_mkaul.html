@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="EN">
+<meta charset="utf-8">
+<script src="ccm.js"></script>
+
+<style>
+    h1 {
+        text-align: center;
+    }
+    div.component {
+        border: solid;
+        margin: 2px;
+    }
+
+</style>
+
+<div id="langmenu" style="float: right;"></div>
+<h1>ccm component demo page</h1>
+<ul><li>div-s are bordered so that you can see their area into which ccm components are rendered</li></ul>
+<div id="clock_div" class="component"></div>
+<div id="tagcloud_div" class="component"></div>
+<div id="game_div" class="component"></div>
+
+<script> // ====== ccm component demo page ======
+
+    // direct rendering of independent component
+    ccm.render( './components/clock.js', { element: jQuery('#clock_div') } );
+
+    // nested rendering of dependent components
+    ccm.render( './components/langmenu.js', { element: jQuery('#langmenu'), selected: 'en' },
+        function( langmenu ){
+            ccm.render( './components/tagcloud.js', { element: jQuery('#tagcloud_div') },
+            function( tagcloud ){
+                langmenu.addObserver( tagcloud.render );
+            } );
+            ccm.render( './components/game_wakener.js', { element: jQuery('#game_div') },
+            function( game ){
+                langmenu.addObserver( game.render );
+            } );
+    } );
+
+</script>

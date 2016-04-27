@@ -25,10 +25,8 @@ ccm.component( {
     number_range_exponent: 2,
     number_range_max_exponent: 6,
     beep: true,
-    style: [ ccm.load,  './css/game_wakener.css' ]
-    // store: [ ccm.store, './json/game_wakener.json' ],
-    // lang:  [ ccm.instance, './components/lang.js', { store: [ ccm.store, './json/game_wakener.json' ] } ],
-    // user:  [ ccm.instance, './components/user.js' ]
+    style: [ ccm.load,  './css/game_wakener.css' ],
+    lang:  [ ccm.instance, './components/lang.js', { store: [ ccm.store, './json/game_wakener_lang.json' ] } ]
 
   },
   
@@ -67,7 +65,7 @@ ccm.component( {
       // render own content
       element.html(
         '<div class="row">' +
-          '<h2>Drücken Sie links bei gerader Quersumme und rechts bei ungerader Quersumme</h2>' +
+          '<h2>lang#task</h2>' +
           '<input class="digit_count" type="range" min="1" max="' +
             self.number_range_max_exponent +
             '" step="1" value="' +
@@ -75,9 +73,9 @@ ccm.component( {
           '<span class="digit_count"></span>' +
         '</div>' +
         '<div class="row">' +
-          '<button class="left block">gerade Quersumme</button>' +
+          '<button class="left block">lang#even</button>' +
           '<p class="number block"></p>' +
-          '<button class="right block">ungerade Quersumme</button>' +
+          '<button class="right block">lang#odd</button>' +
         '</div>' +
         '<div class="row">' +
           '<button class="exit">Start</button>' +

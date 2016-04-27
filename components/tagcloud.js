@@ -35,7 +35,8 @@ ccm.component( {
     },
 
     // https://github.com/addywaddy/jquery.tagcloud.js
-    jquery_tagcloud_lib: [ ccm.load, './lib/jquery.tagcloud.js' ]
+    jquery_tagcloud_lib: [ ccm.load, './lib/jquery.tagcloud.js' ],
+    lang:  [ ccm.instance, './components/lang.js', { store: [ ccm.store, './json/tagcloud_lang.json' ] } ]
 
   },
 
@@ -94,7 +95,7 @@ ccm.component( {
 
         for (var term in dataset){
           // <a href="/path" rel="7">peace</a>
-          html_structure.inner.push({tag:'a',href:self.link(term) ,rel:dataset[term], inner:term});
+          html_structure.inner.push({tag:'a',href:self.link(term) ,rel:dataset[term], inner: 'lang#'+term });
         }
 
         element.html( ccm.helper.html( html_structure ) );
@@ -102,6 +103,12 @@ ccm.component( {
         element.find('#demo a').tagcloud();
 
       } );
+
+      // translate content of own website area
+      if ( self.lang ) self.lang.render();
+
+      // perform callback
+      if ( typeof callback === 'function' ) callback();
 
     };
 

@@ -24,10 +24,8 @@ ccm.component( {
   config: {
 
     beep: true,
-    style: ".ccm-clock h1 { background-color: lightgrey; }"
-    // store: [ ccm.store, 'json/clock.json' ],
-    // lang:  [ ccm.instance, 'components/lang.js', { store: [ ccm.store, 'json/clock.json' ] } ],
-    // user:  [ ccm.instance, 'components/user.js' ]
+    style: ".ccm-clock h1 { background-color: lightgrey; }",
+    lang:  [ ccm.instance, 'components/lang.js', { store: [ ccm.store, 'json/clock_lang.json' ] } ]
 
   },
   
@@ -158,9 +156,9 @@ ccm.component( {
         '<span class="stunden">00</span> : ' +
         '<span class="minuten">00</span> : ' +
         '<span class="sekunden">00</span> <br> ' +
-        '<button class="clear">clear</button> ' +
-        '<button class="set">set</button> ' +
-        '<button class="inc">inc</button> ' +
+        '<button class="clear">lang#clear</button> ' +
+        '<button class="set">lang#set</button> ' +
+        '<button class="inc">lang#inc</button> ' +
         '</h1>'
       );
 
@@ -174,7 +172,7 @@ ccm.component( {
       if ( self.lang ) self.lang.render();
 
       // perform callback
-      if ( callback ) callback();
+      if ( typeof callback === 'function' ) callback();
 
     }
 

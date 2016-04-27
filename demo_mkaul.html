@@ -23,12 +23,12 @@
 
 <script> // ====== ccm component demo page ======
 
-    // direct rendering of independent component
-    ccm.render( './components/clock.js', { element: jQuery('#clock_div') } );
-
     // nested rendering of dependent components
     ccm.render( './components/langmenu.js', { element: jQuery('#langmenu'), selected: 'en' },
         function( langmenu ){
+            ccm.render( './components/clock.js', { element: jQuery('#clock_div') }, function ( clock ) {
+                langmenu.addObserver( clock.render );
+            } );
             ccm.render( './components/tagcloud.js', { element: jQuery('#tagcloud_div') },
             function( tagcloud ){
                 langmenu.addObserver( tagcloud.render );

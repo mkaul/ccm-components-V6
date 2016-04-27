@@ -55,7 +55,7 @@ ccm.component( {
      * @param {function} callback - callback when ccm instance is rendered (first parameter is ccm instance)
      */
     this.render = function ( callback ) {
-
+      
       /**
        * website area for own content
        * @type {ccm.element}
@@ -232,7 +232,7 @@ ccm.component( {
       if ( self.lang ) self.lang.render();
 
       // perform callback
-      if ( callback ) callback();
+      if ( typeof callback === 'function' ) callback();
 
     }
 

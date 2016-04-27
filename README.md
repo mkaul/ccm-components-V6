@@ -10,7 +10,10 @@ The WWW has yet no well established component model which all browser manufactur
 
     git clone https://github.com/mkaul/ccm-components.git
 
-## Demos:
+## Demos
 * [Demo Page](https://kaul.inf.fh-bonn-rhein-sieg.de/ccm/demo_mkaul.html)
 * [Demo Game](https://kaul.inf.fh-bonn-rhein-sieg.de/ccm/games.html)
 * [Demo TagCloud](https://kaul.inf.fh-bonn-rhein-sieg.de/ccm/tagcloud.html)
+
+## Contact
+[Homepage M.Kaul](https://kaul.inf.fh-bonn-rhein-sieg.de) 

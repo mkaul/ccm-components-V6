@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="EN">
 <meta charset="utf-8">
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Code",
+  "name": "ccm",
+  "description": "Yet another componentization of the Web: The Client Side Component Model (ccm)",
+  "url": "https://github.com/mkaul/ccm-components"
+}
+</script>
 <script src="ccm.js"></script>
 
 <style>
@@ -9,14 +18,18 @@
     }
     div.component {
         border: solid;
+        border-color: lightblue;
         margin: 2px;
     }
 
 </style>
-
 <div id="langmenu" style="float: right;"></div>
-<h1>multilingual ccm component demo page</h1>
-<ul><li>div-s are bordered so that you can see their area into which ccm components are rendered</li></ul>
+<h1></h1>
+<ul><li></li><li><div itemscope itemtype="http://schema.org/Code">
+    The name of the underlying software is <span itemprop="name">ccm</span>, which is
+    <span itemprop="description">yet another componentization of the Web: The Client Side Component Model (ccm)</span>. The public GitHub repository can be found under
+    <a href="https://github.com/mkaul/ccm-components" itemprop="url">github.com/mkaul/ccm-components</a>.
+</div></li></ul>
 <div id="clock_div" class="component"></div>
 <div id="tagcloud_div" class="component"></div>
 <div id="game_div" class="component"></div>
@@ -27,7 +40,7 @@
         "de":
         {
             "title": "Mehrsprachige ccm Demoseite",
-            "intro": "In dieser Demoseite werden mehrere ccm-Komponenten in div-s eingebettet, die von der Sprachauswahl abhängen und ihre Beschriftung ändern. Zur besseren Sichtbarkeit der div-s haben diese schwarze Umrandungen. "
+            "intro": "In dieser Demoseite werden mehrere ccm-Komponenten in div-s eingebettet, die von der Sprachauswahl abhängen und ihre Beschriftung ändern. Zur besseren Sichtbarkeit der div-s haben diese hellblaue Umrandungen. "
         },
         "en":
         {
@@ -35,6 +48,8 @@
             "intro": "div-s are bordered so that you can see their area into which ccm components are rendered."
         }
         };
+
+    demo_lang_render('en');
 
     function demo_lang_render( selector ){
         jQuery('h1').html( labels[ selector ][ 'title' ] );

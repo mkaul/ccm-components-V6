@@ -1,0 +1,44 @@
+.ccm-game_wakener .row {
+    width: 100%;
+    text-align: center; // center the content of the container
+}
+
+.ccm-game_wakener .block {
+    width: 100px;
+    display: inline-block; // display inline with ability to provide width/height
+}
+
+.ccm-game_wakener button {
+    margin: 30px;
+    padding: 20px;
+    border-width: 6px;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.ccm-game_wakener .left {
+    background-color: red;
+}
+
+.ccm-game_wakener .right {
+    background-color: green;
+}
+
+.ccm-game_wakener .exit {
+    background-color: darkgray;
+}
+
+.ccm-game_wakener p.number, .ccm-game_wakener span.digit_count  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: xx-large;
+}
+
+.ccm-game_wakener .exit, .ccm-game_wakener .result {
+    font-family: 'Open Sans', sans-serif;
+    font-size: x-large;
+}
+
+.ccm-game_wakener .error {
+    background-color: red;
+}

@@ -1,0 +1,15 @@
+{
+  "de":
+  {
+    "clear": "Löschen",
+    "set": "Setzen",
+    "inc": "Hochzählen"
+  },
+
+  "en":
+  {
+    "clear": "clear",
+    "set": "set",
+    "inc": "inc"
+  }
+}

@@ -15,7 +15,7 @@
 </style>
 
 <div id="langmenu" style="float: right;"></div>
-<h1>ccm component demo page</h1>
+<h1>multilingual ccm component demo page</h1>
 <ul><li>div-s are bordered so that you can see their area into which ccm components are rendered</li></ul>
 <div id="clock_div" class="component"></div>
 <div id="tagcloud_div" class="component"></div>
@@ -23,16 +23,39 @@
 
 <script> // ====== ccm component demo page ======
 
+    var labels = {
+        "de":
+        {
+            "title": "Mehrsprachige ccm Demoseite",
+            "intro": "In dieser Demoseite werden mehrere ccm-Komponenten in div-s eingebettet, die von der Sprachauswahl abhängen und ihre Beschriftung ändern. Zur besseren Sichtbarkeit der div-s haben diese schwarze Umrandungen. "
+        },
+        "en":
+        {
+            "title": "Multilingual ccm component demo page",
+            "intro": "div-s are bordered so that you can see their area into which ccm components are rendered."
+        }
+        };
+
+    function demo_lang_render( selector ){
+        jQuery('h1').html( labels[ selector ][ 'title' ] );
+        jQuery('ul li:first-child').html( labels[ selector ][ 'intro' ] );
+    }
+
     // nested rendering of dependent components
     ccm.render( './components/langmenu.js', { element: jQuery('#langmenu'), selected: 'en' },
         function( langmenu ){
+
+            langmenu.addObserver( demo_lang_render );
+
             ccm.render( './components/clock.js', { element: jQuery('#clock_div') }, function ( clock ) {
                 langmenu.addObserver( clock.render );
             } );
+
             ccm.render( './components/tagcloud.js', { element: jQuery('#tagcloud_div') },
             function( tagcloud ){
                 langmenu.addObserver( tagcloud.render );
             } );
+
             ccm.render( './components/game_wakener.js', { element: jQuery('#game_div') },
             function( game ){
                 langmenu.addObserver( game.render );

@@ -1,0 +1,69 @@
+/**
+ * @overview default style of ccm component for youtube youtube player
+ * @author André Kless <andre.kless@h-brs.de> 2016
+ * @copyright Copyright (c) 2016 Bonn-Rhein-Sieg University of Applied Sciences
+ * @license The MIT License (MIT)
+ */
+
+.ccm-youtube {
+
+  overflow: hidden;
+  /*
+  max-width: 640px;
+  max-height: 390px;
+  */
+  font-family: Arial, sans-serif;
+
+}
+
+.ccm-youtube > .iframe {
+
+  position: relative;
+  padding-bottom: 55%;
+  padding-top: 15px;
+  height: 0;
+  overflow: hidden;
+
+}
+
+.ccm-youtube > .iframe > iframe {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.ccm-youtube > .rating {
+
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.ccm-youtube > .rating > div {
+
+  padding: 0.3em;
+
+}
+
+.ccm-youtube > .rating > div > div {
+
+  display: inline-block;
+  margin: 0.2em;
+
+}
+
+.ccm-youtube > .user > div {
+
+  cursor: pointer;
+
+}
+
+.ccm-youtube > .user > .selected {
+
+  color: #009ee0;
+
+}

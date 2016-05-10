@@ -1,0 +1,21 @@
+.ccm-mass_document_view {
+
+    font-family: Arial, sans-serif;
+    padding: 0.5em;
+
+}
+
+.ccm-mass_document_view .item {
+
+    margin: 0.5em;
+    padding: 0.5em;
+    box-shadow: -5px -2px 16px 0px #4f693f;
+    border-radius: 3px;
+    border: 2px solid #4f693f;
+}
+
+
+.ccm-mass_document_view  .title {
+    font-size: x-large;
+    font-weight: bold;
+}

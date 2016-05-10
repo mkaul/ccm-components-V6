@@ -1,0 +1,54 @@
+{
+  "example":
+  {
+    "key": "example",
+    "title": "Demo-Quizz",
+    "description": "Bitte beantworten Sie die folgenden Fragen.",
+    "questions":
+    [
+      {
+        "text": "Wie viele dieser Antworten sind korrekt?",
+        "answers":
+        [
+          { "text": "eins", "comment": "Weil man nicht mehr als eine Antwort wählen kann." },
+          "zwei",
+          "drei"
+        ],
+        "input": "radio",
+        "correct": 0
+      },
+      {
+        "text": "Und wie viele Antworten können hier korrekt sein?",
+        "answers":
+        [
+          "gar keine",
+          "mehr als eine",
+          { "text": "maximal eine", "comment": "Weil man mehr als eine Antwort wählen kann." }
+        ],
+        "correct": [ 0, 1 ]
+      },
+      {
+        "text": "Könnte diesmal auch nur eine Antwort richtig sein?",
+        "answers": [ "ja", "nein", "vielleicht" ],
+        "correct": [ 0 ]
+      },
+      {
+        "text": "Was ist 1 + 1?",
+        "answers": [ "Apfel", "Birne", "Banane" ],
+        "correct": []
+      },
+      {
+        "text": "Ok, diesmal ernsthaft. Wie lautet die Lösung der folgenden Rechenaufgaben?",
+        "comment": "Bitte die Antwort in das Eingabefeld eintragen. Die Eingabe kann ggf. auch mit der Entertaste bestätigt werden.",
+        "answers": [ "1 + 1", "1 - 1", "-1 - 1" ],
+        "input": "number",
+        "correct": [ "2", "0", "-2" ]
+      },
+      {
+        "text": "Was ist die Wurzel aus -1?",
+        "answers": [ "1", "0", "-1", { "text": "i", "comment": "Im Zahlenraum der komplexen Zahlen." }, { "text": "nicht definiert", "comment": "Im Zahlenraum der reellen Zahlen." } ],
+        "correct": [ false, false, false, true, true ]
+      }
+    ]
+  }
+}

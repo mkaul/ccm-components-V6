@@ -1,0 +1,89 @@
+/**
+ * @overview default style of ccm component for team building
+ * @author André Kless <andre.kless@h-brs.de> 2016
+ * @copyright Copyright (c) 2016 Bonn-Rhein-Sieg University of Applied Sciences
+ * @license The MIT License (MIT)
+ */
+
+.ccm-teambuild {
+
+  background-color: white;
+  font-family: "Arial", sans-serif;
+
+}
+
+.ccm-teambuild > .teams {
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0.5em;
+
+}
+
+.ccm-teambuild > .teams > .team {
+
+  margin: 0.5em;
+  border: 0.1em solid black;
+  border-radius: 0.5em;
+
+}
+
+.ccm-teambuild > .teams > .team > .header {
+
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  border-bottom: 0.1em solid black;
+  border-radius: 0.4em 0.4em 0 0;
+  background-color: silver;
+  padding: 0.5em;
+
+}
+
+.ccm-teambuild > .teams > .team > .header > .name {
+
+  padding: 0.04em 0.5em;
+  white-space: nowrap;
+
+}
+
+.ccm-teambuild > .teams > .team > .header > .status {
+
+  padding-left: 0.2em;
+
+}
+
+.ccm-teambuild > .teams > .team > .members {
+
+  overflow-x: auto;
+  padding: 0.2em;
+
+}
+
+.ccm-teambuild > .teams > .team > .members > .member {
+
+  display: flex;
+  align-items: center;
+  padding: 0.2em;
+
+}
+
+.ccm-teambuild > .teams > .team > .members > .member.user {
+
+  font-weight: bold;
+
+}
+
+.ccm-teambuild > .teams > .team > .members > .member.free {
+
+  font-style: italic;
+
+}
+
+.ccm-teambuild > .teams > .team > .members > .member > .name {
+
+  padding-left: 0.5em;
+  white-space: nowrap;
+
+}

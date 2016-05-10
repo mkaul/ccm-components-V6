@@ -1,0 +1,102 @@
+{
+  "test": {
+    "key": "test",
+    "max_members": 4,
+    "editable": true,
+    "teams": [
+      {
+        "name": "Klessiks",
+        "max_members": 2,
+        "members": {
+          "akless2s": { "key": "akless2s", "name": "Andre Kless" },
+          "tmeskh2s": { "key": "tmeskh2s", "name": "Tea Kless"   }
+        }
+      },
+      {
+        "name": "Students",
+        "max_members": -1,
+        "editable": {
+          "rename": false
+        },
+        "members": {
+          "max":                 { "key": "max",                 "name": "Max Kerp"           },
+          "roman_malcher":       { "key": "roman_malcher",       "name": "Roman Malcher"      },
+          "florian_berscheid":   { "key": "florian_berscheid",   "name": "Florian Berscheid"  },
+          "christian_suellwold": { "key": "christian_suellwold", "name": "Christian Süllwold" }
+        }
+      },
+      {
+        "name": "Work&Study",
+        "max_members": "6",
+        "members": {
+          "mkaul2m":  { "key": "mkaul2m", "name": "Manfred Kaul"     },
+          "arieke2m": { "key": "arieke2m", "name": "Almut Rieke"     },
+          "tbonne2m": { "key": "tbonne2m", "name": "Thorsten Bonne"  },
+          "wheide2m": { "key": "wheide2m", "name": "Wolfgang Heiden" }
+        }
+      }
+    ]
+  },
+
+  "we_course_group": {
+    "key": "we_course_group",
+    "max_teams": 6,
+    "max_members": 20,
+    "editable": true,
+    "teams": [
+      {
+        "name": "Dozenten",
+        "max_members": 2,
+        "editable": false,
+        "members": {
+          "akless2s": { "key": "akless2s", "name": "Andre Kless" },
+          "mkaul2m": { "key": "mkaul2m", "name": "Manfred Kaul" }
+        }
+      },
+      {
+        "name": "Gruppe (a) 9:00 bis 10:30",
+        "max_members": 14,
+        "editable": true
+      },
+      {
+        "name": "Gruppe (b) 10:45 bis 12:15",
+        "max_members": 14,
+        "editable": true
+      },
+      {
+        "name": "Gruppe (c) 13:30 bis 15:00",
+        "max_members": 14,
+        "editable": true
+      },
+      {
+        "name": "Gruppe (d) 15:15 bis 16:45",
+        "max_members": 14,
+        "editable": true
+      },
+      {
+        "name": "Gruppe (e) 18:45 bis 20:15",
+        "max_members": 14,
+        "editable": true
+      }
+    ]
+  },
+
+  "ccm_auswahl_phase_3": {
+    "key": "ccm_auswahl_phase_3",
+    "editable": true,
+    "teams": [
+      {
+        "name": "Dozenten",
+        "max_members": 2,
+        "members": {
+          "akless2s": { "key": "akless2s", "name": "Andre Kless" },
+          "mkaul2m": { "key": "mkaul2m", "name": "Manfred Kaul" }
+        }
+      },
+      {
+        "name": "Vokabeltrainer",
+        "editable": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+/**
+ * @overview default style of ccm component for infinite table
+ * @author André Kless <andre.kless@h-brs.de> 2016
+ * @copyright Copyright (c) 2016 Bonn-Rhein-Sieg University of Applied Sciences
+ * @license The MIT License (MIT)
+ */
+
+.ccm-table {
+
+  display: table;
+  border: 0.05em solid black;
+  overflow: auto;
+
+}
+
+.ccm-table > div {
+
+  display: table-row;
+
+}
+
+.ccm-table > div > div {
+
+  display: table-cell;
+  border: 0.05em solid black;
+  padding: 0.3em;
+
+}
+
+.ccm-table > div > div:not(.edit):not(.not):hover {
+
+  background-color: lightgray;
+  cursor: cell;
+
+}
+
+.ccm-table > div > div > span { padding: 0 1em; }
+
+.ccm-table > div > div > input {
+
+  border: none;
+  font-size: 100%;
+  font-family: inherit;
+  padding: 0;
+
+}

@@ -1,0 +1,47 @@
+{
+  "test":
+  {
+    "key": "test",
+    "left": true,
+    "right": true,
+    "top": true,
+    "bottom": true
+  },
+
+  "dublin":
+  {
+    "key": "dublin",
+    "cols":
+    [
+      {
+        "not": true,
+        "rows":
+        [
+          {                        },
+          { "val": "Eintrag"       },
+          { "val": "verpflichtend" },
+          { "val": "Beschreibung"  },
+          { "val": "Vokabular"     },
+          { "val": "Beispiel"      },
+          { "val": "Kommentar"     },
+          { "val": "Tag"           }
+        ]
+      },
+      { "rows": [ { "val": "Title",       "not": true }, {}, { "not": true, "val": "ja"   }, { "not": true, "val": "Der Name der Lernressource"                                                                     }, { "not": true }, { "not": true }, { "not": true }, { "not": true } ] },
+      { "rows": [ { "val": "Creator",     "not": true }, {}, { "not": true, "val": "ja"   }, { "not": true, "val": "Hauptsächlich für die Erstellung der Lernressource verantwortliche Person."                     }, { "not": true }, { "not": true }, { "not": true }, { "not": true } ] },
+      { "rows": [ { "val": "Subject",     "not": true }, {}, { "not": true, "val": "ja"   }, { "not": true, "val": "Thema der Lernressource"                                                                        }, { "not": true }, { "not": true }, { "not": true }, { "not": true } ] },
+      { "rows": [ { "val": "Description", "not": true }, {}, { "not": true, "val": "ja"   }, { "not": true, "val": "Beschreibung der Lernressource"                                                                 }, { "not": true }, { "not": true }, { "not": true }, { "not": true } ] },
+      { "rows": [ { "val": "Publisher",   "not": true }, {}, { "not": true, "val": "ja"   }, { "not": true, "val": "Person oder Entität die Verantwortlich für die Veröffentlichung der Lernressource ist"          }, { "not": true }, { "not": true }, { "not": true }, { "not": true } ] },
+      { "rows": [ { "val": "Contributer", "not": true }, {}, { "not": true, "val": "nein" }, { "not": true, "val": "Entität, welche zur Lernressource beiträgt"                                                     }, { "not": true }, { "not": true }, { "not": true }, { "not": true } ] },
+      { "rows": [ { "val": "Date",        "not": true }, {}, { "not": true, "val": "ja"   }, { "not": true, "val": "Zeitpunkt oder Periode die mit einem Ereignis im Lebenszyklus der Lernressource assoziiert ist" }, { "not": true }, { "not": true }, { "not": true }, { "not": true } ] },
+      { "rows": [ { "val": "Type",        "not": true }, {}, { "not": true, "val": "ja"   }, { "not": true, "val": "Beschaffenheit oder Genre der Lernressource"                                                    }, { "not": true }, { "not": true }, { "not": true }, { "not": true } ] },
+      { "rows": [ { "val": "Format",      "not": true }, {}, { "not": true, "val": "ja"   }, { "not": true, "val": "Beschreibung des Formates der Lernressource, das ihrer Beschaffenheit entspricht"               }, { "not": true }, { "not": true }, { "not": true }, { "not": true } ] },
+      { "rows": [ { "val": "Identifier",  "not": true }, {}, { "not": true, "val": "ja"   }, { "not": true, "val": "eindeutige Verweisung auf die Lernressource"                                                    }, { "not": true }, { "not": true }, { "not": true }, { "not": true } ] },
+      { "rows": [ { "val": "Path",        "not": true }, {}, { "not": true, "val": "ja"   }, { "not": true, "val": "Eindeutige URL unter der die Lernressource zu finden ist"                                       }, { "not": true }, { "not": true }, { "not": true }, { "not": true } ] },
+      { "rows": [ { "val": "Source",      "not": true }, {}, { "not": true, "val": "ja"   }, { "not": true, "val": "Lernressource, aus der die beschriebene Lernressource abgeleitet ist. (z.B. Vorgängerversion)"  }, { "not": true }, { "not": true }, { "not": true }, { "not": true } ] },
+      { "rows": [ { "val": "Language",    "not": true }, {}, { "not": true, "val": "ja"   }, { "not": true, "val": "Sprache der Lernressource"                                                                      }, { "not": true }, { "not": true }, { "not": true }, { "not": true } ] },
+      { "rows": [ { "val": "Rights",      "not": true }, {}, { "not": true, "val": "ja"   }, { "not": true, "val": "Angabe zu den Rechten, die im Rahmen der und an der Lernressource gehalten werden."             }, { "not": true }, { "not": true }, { "not": true }, { "not": true } ] },
+      { "rows": [ { "val": "Data",        "not": true }, {}, { "not": true, "val": "ja"   }, { "not": true, "val": "Wo befinden sich die Arbeitsdateien"                                                            }, { "not": true }, { "not": true }, { "not": true }, { "not": true } ] }
+    ]
+  }
+}

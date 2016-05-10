@@ -1,0 +1,10 @@
+{
+  "main": {
+    "tag": "div",
+    "class": "iframe",
+    "inner": {
+      "tag": "div",
+      "id": "%id_iframe%"
+    }
+  }
+}

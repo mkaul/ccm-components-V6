@@ -23,9 +23,9 @@ ccm.component( {
    */
   config: {
 
-    key: 'pretest_rechnungswesen',
+    key: 'leistungen',
     //lang: [ ccm.instance, './components/lang.js', { store: [ ccm.store, './json/multiple_choice_lang.json' ] } ],
-    store: [ ccm.store, './json/quizzes.json' ],
+    store: [ ccm.store, './json/quizz.json' ],
     style: [ ccm.load, './css/multiple_choice.css' ]
 
   },

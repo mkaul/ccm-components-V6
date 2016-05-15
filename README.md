@@ -14,11 +14,13 @@ The [Client Side Component Model (ccm)](https://github.com/akless/ccm-components
     
 
 ### Open a html file in the browser:
+* index.html for an index of all ccm components of this GitHub repository
 * demo_mkaul.html for embedding multiple components in a html page and switching languages
 * games.html for games only
 * tagcloud.html for tagcloud only
 
 ## 3. Online Demos
+* [Index Page](http://mkaul.github.io/ccm-components/index.html)
 * [Demo Page](https://kaul.inf.fh-bonn-rhein-sieg.de/ccm/demo_mkaul.html)
 * [Demo Game](https://kaul.inf.fh-bonn-rhein-sieg.de/ccm/games.html)
 * [Demo TagCloud](https://kaul.inf.fh-bonn-rhein-sieg.de/ccm/tagcloud.html)

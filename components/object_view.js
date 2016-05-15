@@ -24,25 +24,7 @@ ccm.component( {
 
     title: 'Title',
 
-    object: { a: 'a', b: 'b' },  // object to be rendered
-
-    // simple query, allowing for regex pattern, overwriting object
-    id_query: null,
-
-    // complex query overwriting simple query
-    query: null,
-
-    // format
-    json_stringify: true,
-
-    // store if querying
-    store: 'form',
-    store_url: 'https://ccm.inf.h-brs.de:8888/index.js',
-    
-    // style: [ ccm.load,  'css/object_view.css' ],
-    // store: [ ccm.store, 'json/object_view.json' ],
-    // lang:  [ ccm.instance, 'components/lang.js', { store: [ ccm.store, 'json/object_view.json' ] } ],
-    user:  [ ccm.instance, './components/user.js' ]
+    object: { a: 'a', b: 'b' }  // object to be rendered
 
   },
   

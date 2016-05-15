@@ -32,12 +32,6 @@ ccm.component( {
       },
 
       {
-        label: 'chat',
-        content: [ ccm.proxy, './components/chat.js' ],
-        actions: [ function () { console.log( '1' ); }, function () { console.log( '2' ); } ]
-      },
-
-      {
         label: 'checklist',
         content: [ ccm.proxy, './components/checklist.js' ],
         actions: [ function () { console.log( 'x' ); }, function () { console.log( 'y' ); } ]

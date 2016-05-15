@@ -1,0 +1,21 @@
+{
+  "main":
+  [
+    {
+      "tag": "div",
+      "id": "langmenu",
+      "style": "float: right"
+    },
+    {
+      "tag": "div",
+      "id": "header",
+      "inner": "lang#header",
+      "style": "text-align: center"
+    },
+    {
+      "tag": "div",
+      "id": "menu",
+      "style": "clear: both"
+    }
+  ]
+}

@@ -1,11 +1,19 @@
 {
   "de":
   {
-    "example": "Beispiel"
+    "answer": "Antworten",
+    "correct": "Korrekte Lösung",
+    "finish": "Abschließen",
+    "next": "weiter",
+    "question": "Frage"
   },
 
   "en":
   {
-    "example": "Example"
+    "answer": "Answer",
+    "correct": "Correct solution",
+    "finish": "Finish",
+    "next": "next",
+    "question": "Question"
   }
 }

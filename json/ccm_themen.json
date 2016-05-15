@@ -1,0 +1,154 @@
+{
+  "themen": [
+    { "key": "Vokabeltrainer",
+      "description": "Als Vokabeltrainer bezeichnet man spezielle Formen von Lernkartei-Software, welche gezielt für das Erlernen von Sprachen entwickelt wurden. Sie sind weit verbreitet und für nahezu alle gängigen Betriebssysteme und Hardware-Plattformen verfügbar. Wie auch beim klassischen Üben ohne Software-Unterstützung entsteht der Lerneffekt in der Regel durch das vermehrte Wiederholen der zu erlernenden Wörter. Die Abfrageformen können dabei sowohl in der Art der Eingabe als auch in der Abfragereihenfolge variieren.",
+      "links": [
+        "https://de.wikipedia.org/wiki/Vokabeltrainer",
+        "https://de.wikipedia.org/wiki/Lernkartei-Software",
+        "https://play.google.com/store/apps/details?id=com.studymode.cram&hl=en",
+        "https://play.google.com/store/apps/details?id=com.quizlet.quizletandroid&hl=en",
+        "https://play.google.com/store/apps/details?id=com.studyblue&hl=en"
+      ]
+    },
+
+    { "key": "Grammar App",
+      "description": "The app should contain clear presentation of grammar points together with interactive exercises to help anyone to practise and improve anytime, anywhere, anyhow.",
+      "links": [
+        "https://play.google.com/store/apps/details?id=org.cambridge.englishgrammar.egiu&hl=en",
+        "http://www.myenglishteacher.eu/blog/6-excellent-english-grammar-apps-for-android/"
+      ]
+    },
+
+    { "key": "Zettelkasten",
+      "description": "Verwaltung von Notizen",
+      "links": [
+        "http://zettelkasten.danielluedecke.de/",
+        "https://de.wikipedia.org/wiki/Zettelkasten",
+        "http://www.macwelt.de/ratgeber/iOS-9-Notizen-9764475.html"
+      ]
+    },
+
+    { "key": "Menü mit Baumstruktur",
+      "description": "Hierarchische Menüs, aufklappbar, interactive trees, easily extendable, themable and configurable, it supports HTML & JSON data sources and AJAX loading.",
+      "links": [
+        "https://www.jstree.com/"
+      ]
+    },
+
+    { "key": "Zuordnungsspiel",
+      "description": "Lernspiele aufbauen aus kleinen interaktiven, multimedialen Bausteinen, die online erstellt und in Lerninhalte eingebunden werden.",
+      "links": [
+        "http://learningapps.org/",
+        "http://learningapps.org/about.php"
+      ]
+    },
+
+    { "key": "Realtime Texteditor",
+      "description": "real-time collaborative document editing",
+      "links": [
+        "https://github.com/ether/etherpad-lite",
+        "https://ace.c9.io/#nav=about"
+      ]
+    },
+
+    { "key": "Kommentierung",
+      "description": "Komponente zur universellen Kommentierung",
+      "links": [
+        "https://posativ.org/isso/",
+        "https://disqus.com/"
+      ]
+    },
+
+    { "key": "Bugtracker",
+      "description": "Bugtracker (von englisch bug tracker, dt. etwa [Software-]Fehler-Verfolger oder Mangelverfolger) sind Fallbearbeitungssysteme (englisch issue tracking oder trouble ticket system) für die Softwareentwicklung, die als Werkzeug eingesetzt werden, um Programmfehler zu erfassen und zu dokumentieren. Mit ihnen werden – oft interaktiv und im Internet – auch Zustands- oder Feature-Berichte geschrieben.",
+      "links": [
+        "https://de.wikipedia.org/wiki/Bugtracker",
+        "https://www.bugzilla.org/"
+      ]
+    },
+
+    { "key": "Quiz-Builder",
+      "description": "Online quizzes are a popular form of entertainment for web surfers. Online quizzes are generally free to play and for entertainment purposes only though some online quiz websites offer prizes. Websites feature online quizzes on many subjects.",
+      "links": [
+        "https://en.wikipedia.org/wiki/Online_quiz",
+        "http://www.quiz-builder.com/",
+        "https://www.typeform.com",
+        "http://www.proprofs.com/quiz-school/"
+      ]
+    },
+
+    { "key": "Virtueller Rundgang",
+      "description": "Virtuelle Führung durch Räume",
+      "links": [
+        "https://tuicruises.com/virtueller-rundgang"
+      ]
+    },
+
+    { "key": "Infinite Realtime Table",
+      "description": "Infinite Table: Potenziell unendliche Tabellen, die nach rechts und nach unten beliebig erweiterbar sind. Webseiten unterscheiden sich von Papierseiten auch wesentlich durch ihre Universalität und potenzielle Unendlichkeit in mehreren Dimensionen: Listen kann man beliebig fortsetzen, Tabellen nach rechts und nach unten beliebig ergänzen, usw. Daher der Name \"Infinite Cloud\" (siehe auch Landkarte über kollaborative Cloud-Dienste). Man kann einige universelle Datenstrukturen entwickeln, die die potenzielle Unendlichkeit nutzen. In allen Fällen handelt es sich um kollaborative WebApps in HTML5 und JavaScript mit minimalem serverseitigen Backend. Die WebApps sollen auch im studentischen Übungsbetrieb zum Einsatz kommen. Hier werden dann andere Features interessant. Z.B. soll der Dozent Regeln vorgeben können, was in den Listen vorkommen soll, was verboten ist (verbotene Strukturen) und wann die Lösung vollständig ist. Übung wird auf dieser Basis zu einem kollaborativen Spiel mit einer WebApp. ",
+      "links": [
+        "http://kaul.inf.h-brs.de/infinite/sandbox.php"
+      ]
+    },
+
+    { "key": "Messenger",
+      "description": "Instant Messaging [ˌɪnstənt ˈmɛsɪdʒɪŋ] (kurz IM; englisch für sofortige Nachrichtenübermittlung) oder Nachrichtensofortversand ist eine Kommunikationsmethode, bei der sich zwei oder mehr Teilnehmer per Textnachrichten unterhalten. Dabei löst der Absender die Übermittlung aus (sogenanntes Push-Verfahren), so dass die Nachrichten möglichst unmittelbar (englisch „instant“) beim Empfänger ankommen. Damit Nachrichten übertragen werden können, müssen die Teilnehmer mit einem Computerprogramm (genannt Client) über ein Netz wie das Internet direkt oder über einen Server miteinander verbunden sein. In der Regel können Nachrichten auch abgeschickt werden, wenn der Gesprächspartner gerade nicht online ist; die Nachricht wird dann später an den Empfänger ausgeliefert.",
+      "links": [
+        "https://de.wikipedia.org/wiki/Instant_Messaging",
+        "https://www.whatsapp.com/?l=de",
+        "https://slack.com/",
+        "https://gitter.im/"
+      ]
+    },
+
+    { "key": "Item-Verwaltung",
+      "description": "Der Begriff To-do-Liste (auch 2Do-Liste) (engl.: to = zu, do = tun) oder Pendenzenliste, Aufgabenliste, Liste offener Punkte (auch LOP) wird beim Aufgabenmanagement oder bei der Aufgabenplanung einzelner Personen, in Gruppen und Projekten verwendet. In einer To-do-Liste wird festgehalten, welche Aufgaben anstehen, wer dafür verantwortlich ist und bis wann sie erledigt sein müssen. Diese Listen können auch Teil einer Selbstorganisation sein. Der Liste ist nicht zu entnehmen, zu welchem Zeitpunkt der Status einer Aktion geändert wurde, sondern nur der aktuelle Zustand.",
+      "links": [
+        "https://de.wikipedia.org/wiki/To-do-Liste",
+        "http://todomvc.com/"
+      ]
+    },
+
+    { "key": "Ja-Nein-Quizzes mit Zeitmessung",
+      "description": "Erweiterung des Spiels unter http://mkaul.github.io/ccm-components/games.html für beliebige Ja-Nein-Quizze.",
+      "links": [
+        "http://mkaul.github.io/ccm-components/games.html"
+      ]
+    },
+
+    { "key": "Glossar",
+      "description": "Ein Glossar (lateinisch glossarium, griechisch γλωσσάριον [glōssarion], Diminutiv zu γλῶσσα [glōssa] oder γλῶττα [glōtta] wörtlich für „Zunge“ oder „Sprache“) ist eine Liste von Wörtern mit beigefügten Erklärungen oder Übersetzungen. Das lateinische Wort glossarium bezeichnet dabei als Objekt ein „Buch“, das (ver)alte(te) oder fremde Wörter erläutert. Im erweiterten Sinn wird ein Glossar auch Begriffserklärung genannt. Zudem, insbesondere wenn es um die Erklärung oder Beschreibung einzelner Begriffe geht, werden diese auch als [Begriffs-]Abgrenzung oder Definition bezeichnet.",
+      "links": [
+        "https://de.wikipedia.org/wiki/Glossar"
+      ]
+    },
+
+    { "key": "User-Story-Builder",
+      "description": "User Stories sind heute ein beliebter Einstieg in Projekte, besonders bei agilen Methoden. Bauen Sie eine ccm-Komponente, mit der Sie User Stories sammeln und organisieren können.",
+      "links": [
+        "https://www.youtube.com/embed/LGeDZmrWwsw"
+      ]
+    },
+
+    { "key": "Taschenrechner",
+      "description": "Taschenrechner als ccm-Komponente",
+      "links": [
+        "http://www2.inf.fh-bonn-rhein-sieg.de/~fdahma2s/phase2/taschenrechner.html"
+      ]
+    },
+
+    { "key": "Excel-Tabelle",
+      "description": "Tabellenkalkulation als ccm-Komponente",
+      "links": [
+        "https://de.wikipedia.org/wiki/Tabellenkalkulation"
+      ]
+    },
+
+    { "key": "Campus App",
+      "description": "Campus App für die Hochschule Bonn-Rhein-Sieg",
+      "links": [
+        "http://www.campus-app.de/"
+      ]
+    }
+  ]
+}

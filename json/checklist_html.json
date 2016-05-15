@@ -1,0 +1,16 @@
+{
+  "task":
+  {
+    "tag": "span",
+    "onmouseenter": "%%",
+    "inner":
+    [
+      { "tag": "input", "type": "checkbox", "checked": "%%", "onchange": "%%" },
+      "&nbsp;",
+      { "tag": "input", "type": "text", "value": "%%", "placeholder": "%%", "oninput": "%%" },
+      "&nbsp;",
+      { "tag": "button", "inner": "%%", "onclick": "%%" },
+      { "tag": "br" }
+    ]
+  }
+}

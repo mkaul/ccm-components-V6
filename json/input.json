@@ -1,0 +1,349 @@
+{
+  "demo":
+  {
+    "key": "test",
+    "form":
+    {
+      "button": true,
+      "onsubmit": "%%"
+    },
+    "fieldset": "Formular",
+    "inputs":
+    [
+      {
+        "label": "Benutzer",
+        "name": "username",
+        "input": "text",
+        "placeholder": "max_mustermann"
+      },
+      {
+        "label": "Passwort",
+        "name": "password",
+        "input": "password",
+        "pattern": "(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{3,}",
+        "title": "Mindestens eine Ziffer, ein Gross- und ein Kleinbuchstabe und mindestens 3 Zeichen",
+        "maxlength": "5",
+        "size": "3",
+        "required": true
+      },
+      {
+        "label": "Ich bin...",
+        "name": "destination",
+        "input": "radio",
+        "values":
+        [
+          { "value": "here", "caption": "hier" },
+          { "value": "there", "caption": "da", "checked": true },
+          { "value": "disabled", "caption": "dort", "disabled": true, "title": "deaktiviert" }
+        ]
+      },
+      {
+        "label": "AGB's",
+        "name": "agb",
+        "input": "checkbox",
+        "caption": "gelesen",
+        "checked": true
+      },
+      {
+        "label": "Vorhanden",
+        "name": "exists",
+        "input": "checkbox",
+        "values":
+        [
+          { "name": "private_life", "caption": "Privatleben", "checked": true },
+          { "name": "working_life", "caption": "Arbeitsleben", "checked": true },
+          { "name": "free", "value": "free_time", "caption": "Freizeit" }
+        ]
+      },
+      {
+        "label": "Rolle",
+        "name": "role",
+        "input": "select",
+        "options":
+        [
+          {
+            "value": "thinker",
+            "caption": "Denker und Erfinder"
+          },
+          {
+            "value": "investigator",
+            "caption": "Organisator und Wegbereiter"
+          },
+          {
+            "value": "coordinator",
+            "caption": "Koordinator"
+          },
+          {
+            "value": "shaper",
+            "caption": "Antreiber"
+          },
+          {
+            "value": "evaluator",
+            "caption": "Bewerter oder Beobachter"
+          },
+          {
+            "value": "teamworker",
+            "caption": "Teamarbeiter"
+          },
+          {
+            "value": "implementer",
+            "caption": "Umsetzer (Implementierer)"
+          },
+          {
+            "value": "completer",
+            "caption": "Erfüller oder Perfektionist"
+          },
+          {
+            "value": "specialist",
+            "caption": "Spezialist",
+            "selected": true
+          }
+        ]
+      },
+      {
+        "label": "Geschichte",
+        "name": "story",
+        "placeholder": "Es war einmal...",
+        "input": "textarea",
+        "rows": "2",
+        "cols": "18"
+      },
+      {
+        "label": "Superzahl",
+        "name": "nr",
+        "input": "number",
+        "min": "1",
+        "max": "9",
+        "step": "2",
+        "value": "5"
+      },
+      {
+        "label": "Datum",
+        "name": "date",
+        "input": "date",
+        "min": "1984-06-11",
+        "max": "2030-01-01"
+      },
+      {
+        "label": "Farbe",
+        "name": "colour",
+        "input": "color"
+      },
+      {
+        "label": "Dienstjahre",
+        "name": "jobyears",
+        "input": "range",
+        "value": "15",
+        "min": "0",
+        "max": "65"
+      },
+      {
+        "label": "Monat",
+        "name": "month",
+        "input": "month"
+      },
+      {
+        "label": "Woche",
+        "name": "week",
+        "input": "week"
+      },
+      {
+        "label": "Uhrzeit",
+        "name": "time",
+        "input": "time"
+      },
+      {
+        "label": "Sternzeit",
+        "name": "datetime",
+        "input": "datetime"
+      },
+      {
+        "label": "Lokalzeit",
+        "name": "localtime",
+        "input": "datetime-local"
+      },
+      {
+        "label": "Email",
+        "name": "email",
+        "input": "email"
+      },
+      {
+        "label": "Suche",
+        "name": "search",
+        "input": "search"
+      },
+      {
+        "label": "Telefon",
+        "name": "telnr",
+        "input": "tel"
+      },
+      {
+        "label": "Webseite",
+        "name": "homepage",
+        "input": "url"
+      }
+    ]
+  },
+
+  "dublin":
+  {
+    "key": "dublin",
+    "form":
+    {
+      "button": true,
+      "onsubmit": "%%"
+    },
+    "fieldset": "Lernressource",
+    "inputs":
+    [
+      {
+        "label": "Title",
+        "name": "title",
+        "input": "text",
+        "placeholder": "Was bedeutet Objektorientierung",
+        "title": "Name der Lernressource. Tag: DC.Title",
+        "required": true
+      },
+      {
+        "label": "Creator",
+        "name": "creator",
+        "input": "text",
+        "placeholder": "Bilbo Baggins",
+        "title": "Hauptsächlich für die Erstellung der Lernressource verantwortliche Person. Tag: DC.Creator",
+        "required": true
+      },
+      {
+        "label": "Subject",
+        "name": "subject",
+        "input": "text",
+        "placeholder": "Objektorientierte Programmierung",
+        "title": "Thema der Lernressource. Tag: DC.Subject",
+        "required": true
+      },
+      {
+        "label": "Description",
+        "name": "description",
+        "input": "textarea",
+        "rows": "5",
+        "placeholder": "Das Video führt anhand greifbarer Beispiele aus dem Alltag die Grundprinzipien der objektorientierten Programmierung ein.",
+        "title": "Beschreibung der Lernressource. Tag: DC.Description",
+        "required": true
+      },
+      {
+        "label": "Publisher",
+        "name": "publisher",
+        "input": "text",
+        "placeholder": "Hochschule Worms",
+        "title": "Person oder Entität die Verantwortlich für die Veröffentlichung der Lernressource ist. Tag: DC.Publisher",
+        "required": true
+      },
+      {
+        "label": "Contributor",
+        "name": "contributor",
+        "input": "text",
+        "placeholder": "Bilbo Baggins",
+        "title": "Entität, welche zur Lernressource beiträgt. Einzelpersonen oder auch Institut oder mehrere Personen die am Entstehen mitgewirkt haben. Tag: DC.Contributor"
+      },
+      {
+        "label": "Date",
+        "name": "date",
+        "input": "date",
+        "min": "2015-01-01",
+        "max": "2030-01-01",
+        "placeholder": "2030-01-01",
+        "title": "Datum der Veröffentlichung! Zeitpunkt oder Periode die mit einem Ereignis im Lebenszyklus der Lernressource assoziiert ist. Tag: DC.Date",
+        "required": true
+      },
+      {
+        "label": "Type",
+        "name": "type",
+        "input": "select",
+        "options":
+        [
+          { "value": "Collection" },
+          { "value": "Dataset" },
+          { "value": "Event" },
+          { "value": "Image" },
+          { "value": "Interactive Resource" },
+          { "value": "Moving Image", "selected": true },
+          { "value": "Physical Object" },
+          { "value": "Service" },
+          { "value": "Software" },
+          { "value": "Sound" },
+          { "value": "Still Image" },
+          { "value": "Text" }
+        ],
+        "title": "Beschaffenheit oder Genre der Lernressource. Tag: DC.Type"
+      },
+      {
+        "label": "Format",
+        "name": "format",
+        "input": "select",
+        "options":
+        [
+          { "value": "application" },
+          { "value": "audio" },
+          { "value": "example" },
+          { "value": "image" },
+          { "value": "message" },
+          { "value": "model" },
+          { "value": "multipart" },
+          { "value": "text" },
+          { "value": "video", "selected": true }
+        ],
+        "title": "Beschreibung des Formates der Lernressource, das ihrer Beschaffenheit entspricht. Tag: DC.Format"
+      },
+      {
+        "label": "Identifier",
+        "name": "identifier",
+        "input": "text",
+        "placeholder": "Eindeutiges Kürzel",
+        "title": "Eindeutige Verweisung auf die Lernressource. Tag: DC.Identifier",
+        "required": true
+      },
+      {
+        "label": "Path",
+        "name": "path",
+        "input": "text",
+        "placeholder": "Vorzugsweise der Pfad unter OLAT",
+        "title": "Eindeutige URL unter der die Lernressource zu finden ist. Tag: DC.Path",
+        "required": true
+      },
+      {
+        "label": "Source",
+        "name": "source",
+        "input": "text",
+        "placeholder": "Interner Verweis auf Lernressource (über Identifier + Path)",
+        "title": "Lernressource, aus der die beschriebene Lernressource abgeleitet ist (z.B. Vorgängerversion). Tag: DC.Source",
+        "required": true
+      },
+      {
+        "label": "Language",
+        "name": "language",
+        "input": "select",
+        "options":
+        [
+          { "caption": "Deutsch", "value": "de", "selected": true },
+          { "caption": "Englisch", "value": "en" }
+        ],
+        "title": "Sprache der Lernressource. Tag: DC.Language"
+      },
+      {
+        "label": "Rights",
+        "name": "rights",
+        "input": "text",
+        "placeholder": "Klärung offen.",
+        "title": "Angabe zu den Rechten, die im Rahmen der und an der Lernressource gehalten werden. Tag: DC.Rights",
+        "required": true
+      },
+      {
+        "label": "Data",
+        "name": "data",
+        "input": "text",
+        "placeholder": "Schorn/HS Koblenz/Projektserver/Module/WiWi/Videoprod.",
+        "title": "Wo befinden sich die Arbeitsdateien der Lernressource? (Person/Institut/Speichort)",
+        "required": true
+      }
+    ]
+  }
+}

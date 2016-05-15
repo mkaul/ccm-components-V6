@@ -26,14 +26,14 @@ ccm.component( {
     entries: [
 
       {
-        label: 'teambuild',
-        content: [ ccm.proxy, './components/teambuild.js' ],
+        label: 'blank',
+        content: [ ccm.proxy, './components/blank.js' ],
         actions: [ function () { console.log( 'a' ); }, function () { console.log( 'b' ); } ]
       },
 
       {
-        label: 'checklist',
-        content: [ ccm.proxy, './components/checklist.js' ],
+        label: 'quizz',
+        content: [ ccm.proxy, './components/quizz.js' ],
         actions: [ function () { console.log( 'x' ); }, function () { console.log( 'y' ); } ]
       }
 

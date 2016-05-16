@@ -1,11 +1,15 @@
 {
   "de":
   {
-    "example": "Beispiel"
+    "demo": "Demo",
+    "hello": "Hallo",
+    "world": "Welt"
   },
 
   "en":
   {
-    "example": "Example"
+    "demo": "Demo",
+    "hello": "Hello",
+    "world": "World"
   }
 }

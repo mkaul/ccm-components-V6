@@ -1,0 +1,22 @@
+ccm.callback[ "teambuild_lang.json" ](
+{
+  "de":
+  {
+    "free": "frei",
+    "join": "beitreten",
+    "leave": "verlassen",
+    "team": "Team %s",
+    "group": "Gruppe %s"
+  },
+
+  "en":
+  {
+    "free": "free",
+    "join": "join",
+    "leave": "leave",
+    "rename": "rename",
+    "team": "Team %s",
+    "group": "Group %s"
+  }
+}
+);

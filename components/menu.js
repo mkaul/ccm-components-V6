@@ -27,7 +27,7 @@ ccm.component( {
 
       {
         label: 'teambuild',
-        content: [ ccm.proxy, './components/teambuild.js' ],
+        content: [ ccm.proxy, 'http://mkaul.github.io/ccm-components/lib/components/teambuild.js' ],
         actions: [ function () { console.log( 'a' ); }, function () { console.log( 'b' ); } ]
       },
 

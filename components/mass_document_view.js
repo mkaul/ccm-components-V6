@@ -23,9 +23,9 @@ ccm.component( {
   config: {
 
     key:   'themen',
-    html:  [ ccm.load, './json/schema.json' ],     // schema
+    html:  [ ccm.load, './json/mass_document_view_html.json' ],     // schema
     style:  [ ccm.load, './css/mass_document_view.css' ],     // layout
-    store: [ ccm.store, './json/ccm_themen.json' ], // values for schema
+    store: [ ccm.store, './json/mass_document_view.json' ], // values for schema
     prepare: function( dataset, nr ){
 
       Object.keys(dataset).map(function (index) {

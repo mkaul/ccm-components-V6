@@ -1,11 +1,11 @@
 {
   "de":
   {
-    "header": "Index der ccm-Komponenten dieses GitHub-Repositories"
+    "header": "Index der ccm-Komponenten dieses GitHub-<a href=\"https://github.com/mkaul/ccm-components\" target=_blank>Repositories</a>"
   },
 
   "en":
   {
-    "header": "Index of ccm components of this GitHub repository"
+    "header": "Index of ccm components of this GitHub <a href=\"https://github.com/mkaul/ccm-components\" target=_blank>repository</a>"
   }
 }

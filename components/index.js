@@ -99,6 +99,7 @@ ccm.component( {
           self.menu.render( {
 
             element: element.find('> #menu'),
+            parent: self,
 
             entries:
 
@@ -107,11 +108,7 @@ ccm.component( {
                   all_config_elements.push(
                     {
                       label:   next_component,
-                      content: [ ccm.proxy, './components/' + next_component + '.js' ],
-                      lang:     [ ccm.instance,  './components/lang.js', { store: [ ccm.store, './json/' + next_component + '_lang.json' ] } ],
-                      actions: [ function () {
-                        // TODO langmenu_component.addObserver( this.render );
-                      } ]
+                      content: [ ccm.proxy, './components/' + next_component + '.js' ]
                     }
                   );
                   return all_config_elements;

@@ -24,7 +24,7 @@ ccm.component( {
   config: {
 
     beep: true,
-    style: ".ccm-clock h1 { background-color: lightgrey; }",
+    style: [ ccm.load, './css/clock.css' ],
     lang:  [ ccm.instance, 'http://mkaul.github.io/ccm-components/lib/components/lang.js', { store: [ ccm.store, 'json/clock_lang.json' ] } ]
 
   },

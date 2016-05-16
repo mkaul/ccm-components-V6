@@ -25,7 +25,7 @@ ccm.component( {
 
     html:          [ ccm.load, './json/quizz_html.json' ],
     key:           'example',
-    lang:          [ ccm.instance, './components/lang.js', { store: [ ccm.store, './json/quizz_lang.json' ] } ],
+    lang:          [ ccm.instance, 'http://mkaul.github.io/ccm-components/lib/components/lang.js', { store: [ ccm.store, './json/quizz_lang.json' ] } ],
     onAnswer:      function ( result ) { console.log( result ); },
     onFinish:      function ( result ) { console.log( result ); result.quizz.render(); return false; },
     store:         [ ccm.store, './json/quizz.json' ],

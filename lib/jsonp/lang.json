@@ -1,0 +1,15 @@
+ccm.callback[ "lang.json" ](
+{
+  "de":
+  {
+    "hello": "Hallo Welt",
+    "sayHello": "Hallo, %s"
+  },
+
+  "en":
+  {
+    "hello": "Hello world",
+    "sayHello": "Hello, %s"
+  }
+}
+);

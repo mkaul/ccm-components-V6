@@ -26,7 +26,7 @@ ccm.component( {
     number_range_max_exponent: 6,
     beep: true,
     style: [ ccm.load,  './css/game_wakener.css' ],
-    lang:  [ ccm.instance, './components/lang.js', { store: [ ccm.store, './json/game_wakener_lang.json' ] } ]
+    lang:  [ ccm.instance, 'http://mkaul.github.io/ccm-components/lib/components/lang.js', { store: [ ccm.store, './json/game_wakener_lang.json' ] } ]
 
   },
   

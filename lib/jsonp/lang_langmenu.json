@@ -1,3 +1,4 @@
+ccm.callback[ "lang_langmenu.json" ](
 {
   "de":
   {
@@ -13,3 +14,5 @@
     "ge": "Georgia"
   }
 }
+
+);

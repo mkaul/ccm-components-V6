@@ -1,8 +1,8 @@
 {
   "demo":
   {
-    "key": "lang#demo",
-    "foo": "lang#hello",
-    "bar": "lang#world"
+    "key": "demo",
+    "foo": "Hello",
+    "bar": "world"
   }
 }

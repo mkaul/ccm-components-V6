@@ -20,10 +20,10 @@ The [Client Side Component Model (ccm)](https://github.com/akless/ccm-components
 * tagcloud.html for tagcloud only
 
 ## 3. Online Demos
-* [Index Page](http://mkaul.github.io/ccm-components/index.html)
-* [Demo Page](https://kaul.inf.fh-bonn-rhein-sieg.de/ccm/demo_mkaul.html)
-* [Demo Game](https://kaul.inf.fh-bonn-rhein-sieg.de/ccm/games.html)
-* [Demo TagCloud](https://kaul.inf.fh-bonn-rhein-sieg.de/ccm/tagcloud.html)
+* [Index of components of this repository](http://mkaul.github.io/ccm-components/index_components.html)
+* [Demo Page](http://mkaul.github.io/ccm-components/demo_mkaul.html)
+* [Demo Game](http://mkaul.github.io/ccm-components/games.html)
+* [Demo TagCloud](http://mkaul.github.io/ccm-components/tagcloud.html)
 
 ## 4. Contact
 * [GitHub Homepage for ccm components](http://mkaul.github.io/ccm-components)

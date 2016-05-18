@@ -24,7 +24,7 @@ ccm.component( {
 
     key: 'demo',
     html: [ ccm.load, './json/checklist_html.json' ],
-    store: [ ccm.store, { db: 'redis', store: 'checklist', url: 'wss://ccm.inf.h-brs.de:8888/index.js' } ],
+    store: [ ccm.store, { db: 'redis', store: 'checklist', url: 'ws://ccm2.inf.h-brs.de/index.js' } ],
     text_placeholder: 'Hier neue Aufgabe eingeben...',
     text_delete: 'Entfernen'
 

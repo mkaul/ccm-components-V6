@@ -27,4 +27,4 @@ The [Client Side Component Model (ccm)](https://github.com/akless/ccm-components
 * [GitHub Homepage of this repository](http://mkaul.github.io/ccm-components)
 
 ## 4. Contact
-* [Homepage Manfred Kaul](https://kaul.inf.fh-bonn-rhein-sieg.de) 
+* [Homepage M. Kaul](https://www.h-brs.de/de/inf/prof-dr-manfred-kaul) 

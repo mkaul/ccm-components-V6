@@ -24,7 +24,7 @@ The [Client Side Component Model (ccm)](https://github.com/akless/ccm-components
 * [Demo Page](http://mkaul.github.io/ccm-components/demo_mkaul.html)
 * [Demo Game](http://mkaul.github.io/ccm-components/games.html)
 * [Demo TagCloud](http://mkaul.github.io/ccm-components/tagcloud.html)
+* [GitHub Homepage of this repository](http://mkaul.github.io/ccm-components)
 
 ## 4. Contact
-* [GitHub Homepage for ccm components](http://mkaul.github.io/ccm-components)
 * [Homepage Manfred Kaul](https://kaul.inf.fh-bonn-rhein-sieg.de) 

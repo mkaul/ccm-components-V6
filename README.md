@@ -20,14 +20,16 @@ The [W3C WebComponent Custom Element](http://www.w3.org/TR/custom-elements/) can
     git clone https://github.com/mkaul/ccm-components.git
     
 
-### Open a html file in the browser:
+### 4. Usage: Open a html file in the browser
+No server required. Simply open one of the HTML files in the main directory in your browser.
+
 * index.html for an index of all ccm components of this GitHub repository
 * demo_mkaul.html for embedding multiple components in a html page and switching languages
 * games.html for games only
 * tagcloud.html for tagcloud only
 * w3c_custom_tag.html as W3C WebComponent Custom Element demo 
 
-## 4. Online Demos
+## 5. Online Demos
 * [Index of components of this repository](http://mkaul.github.io/ccm-components/index_components.html)
 * [Demo Page](http://mkaul.github.io/ccm-components/demo_mkaul.html)
 * [Demo Game](http://mkaul.github.io/ccm-components/games.html)
@@ -35,5 +37,5 @@ The [W3C WebComponent Custom Element](http://www.w3.org/TR/custom-elements/) can
 * [W3C WebComponent Custom Element](http://mkaul.github.io/ccm-components/w3c_custom_tag.html)
 * [GitHub Homepage of this repository](http://mkaul.github.io/ccm-components)
 
-## 5. Contact
+## 6. Contact
 * [Homepage M. Kaul](https://www.h-brs.de/de/inf/prof-dr-manfred-kaul) 

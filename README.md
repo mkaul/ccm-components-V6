@@ -20,7 +20,7 @@ The [W3C WebComponent Custom Element](http://www.w3.org/TR/custom-elements/) can
     git clone https://github.com/mkaul/ccm-components.git
     
 
-### 4. Usage: Open a html file in the browser
+## 4. Usage: Open a html file in the browser
 No server required. Simply open one of the HTML files in the main directory in your browser.
 
 * index.html for an index of all ccm components of this GitHub repository

@@ -21,21 +21,14 @@ The [W3C WebComponent Custom Element](http://www.w3.org/TR/custom-elements/) can
     
 
 ## 4. Usage: Open a html file in the browser
-No server required. Simply open one of the HTML files in the main directory in your browser.
+No server required. Simply open one of the HTML files in the main directory in your browser with the file:// protocol. On the [GitHub Homepage of this repository](http://mkaul.github.io/ccm-components) you have all demos online without any installation.
 
-* index.html for an index of all ccm components of this GitHub repository
-* demo_mkaul.html for embedding multiple components in a html page and switching languages
-* games.html for games only
-* tagcloud.html for tagcloud only
-* w3c_custom_tag.html as W3C WebComponent Custom Element demo 
+* [index.html](http://mkaul.github.io/ccm-components/index_components.html) for an index of all ccm components of this GitHub repository
+* [demo_mkaul.html](http://mkaul.github.io/ccm-components/demo_mkaul.html) for embedding multiple components in a html page and switching languages
+* [games.html](http://mkaul.github.io/ccm-components/games.html) for games only
+* [tagcloud.html](http://mkaul.github.io/ccm-components/tagcloud.html) for tagcloud only
+* [w3c_custom_tag.html](http://mkaul.github.io/ccm-components/w3c_custom_tag.html) as W3C WebComponent Custom Element demo 
 
-## 5. Online Demos
-* [Index of components of this repository](http://mkaul.github.io/ccm-components/index_components.html)
-* [Demo Page](http://mkaul.github.io/ccm-components/demo_mkaul.html)
-* [Demo Game](http://mkaul.github.io/ccm-components/games.html)
-* [Demo TagCloud](http://mkaul.github.io/ccm-components/tagcloud.html)
-* [W3C WebComponent Custom Element](http://mkaul.github.io/ccm-components/w3c_custom_tag.html)
-* [GitHub Homepage of this repository](http://mkaul.github.io/ccm-components)
-
-## 6. Contact
+## 5. Contact
 * [Homepage M. Kaul](https://www.h-brs.de/de/inf/prof-dr-manfred-kaul) 
+* [Kaul Informatik University Server](https://kaul.inf.fh-bonn-rhein-sieg.de)

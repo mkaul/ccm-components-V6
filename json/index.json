@@ -11,6 +11,7 @@
     "menu",
     "multiple_choice",
     "quizz",
+    "rating",
     "table",
     "tagcloud"
   ]

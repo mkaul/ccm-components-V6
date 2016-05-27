@@ -1,0 +1,37 @@
+/**
+ * @overview default style of ccm component for rating
+ * @author Tea Kless <tea.kless@smail.inf.h-brs.de> 2016
+ * @copyright Copyright (c) 2016 Bonn-Rhein-Sieg University of Applied Sciences
+ * @license The MIT License (MIT)
+ */
+
+.ccm-rating {
+    font-family: Verdana, Arial, sans-serif;
+    color: #879496;
+}
+
+.ccm-rating > .rating,
+.ccm-rating > .rating > .likes,
+.ccm-rating > .rating > .dislikes {
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-between;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ccm-rating > .rating > .likes > div,
+.ccm-rating > .rating > .dislikes > div {
+    padding: 0.1em;
+    font-size: 85%;
+}
+
+.ccm-rating > .rating > .stars {
+    cursor: pointer;
+    font-size: 1.3em;
+}
+
+.ccm-rating > .user > .selected {
+    color: #009ee0;
+}

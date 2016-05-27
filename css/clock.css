@@ -9,8 +9,11 @@
 
 }
 
-.ccm-clock > h1 {
+.ccm-clock > .digital_clock {
 
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
     background-color: lightgrey;
 

@@ -24,7 +24,7 @@ ccm.component( {
   config: {
 
     beep: true, // configure whether clock should beep during setting procedure
-    browser_overhead: 11, // time in milliseconds used by browser to execute clock loop
+    browser_overhead: 11, // time in milliseconds used by browser to execute 1 second clock loop, i.e. 1000 msec
     // depends on the browser. 11 msec is for Chrome.
     style: [ ccm.load, './css/clock.css' ],
     lang:  [ ccm.instance, 'http://mkaul.github.io/ccm-components/lib/components/lang.js', { store: [ ccm.store, './json/clock_lang.json' ] } ] // multi-lingual

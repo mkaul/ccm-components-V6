@@ -77,10 +77,10 @@ ccm.component( {
       );
 
       /**
-       * clock object
+       * public clock object accessible by other components
        * @type {object}
        */
-      var digital_clock = (function(){
+      self.digital_clock = (function(){
         // encapsulate object via function scope via IIFE pattern
         // see https://en.wikipedia.org/wiki/Immediately-invoked_function_expression
 
@@ -161,11 +161,11 @@ ccm.component( {
         return that;
       })();
 
-      element.find('button.clear').click(digital_clock.clear);
-      element.find('button.set').click(digital_clock.set);
-      element.find('button.inc').click(digital_clock.inc);
+      element.find('button.clear').click(self.digital_clock.clear);
+      element.find('button.set').click(self.digital_clock.set);
+      element.find('button.inc').click(self.digital_clock.inc);
 
-      digital_clock.start();
+      self.digital_clock.start();
 
       // translate content of own website area
       if ( self.lang ) self.lang.render();

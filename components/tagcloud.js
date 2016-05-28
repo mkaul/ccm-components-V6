@@ -1,6 +1,6 @@
 /**
  * @overview tagcloud component
- * @author Manfred Kaul <manfred.kaul@h-brs.de> 2016
+ * @author Manfred Kaul <manfred.kaul(at)h-brs.de> 2016
  * @license The MIT License (MIT)
  * @uses https://github.com/addywaddy/jquery.tagcloud.js
  */

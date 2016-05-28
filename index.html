@@ -1,6 +1,12 @@
 <!DOCTYPE html>
+<html lang="EN">
 <meta charset="utf-8">
 <script src="ccm.js"></script>
+
+<div class="index"></div>
+<div class="side_panel"></div>
+
 <script>
-  ccm.render( './components/index.js' );
+  ccm.render( './components/index.js', jQuery('div.index') );
+  ccm.render( './components/side_panel.js', { position: 'left', element: jQuery('div.side_panel') } );
 </script>

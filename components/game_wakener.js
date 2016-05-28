@@ -1,6 +1,6 @@
 /**
  * @overview game_wakener template for ccm components
- * @author mkaul2m <Manfred.Kaul@h-brs.de>, 2015
+ * @author mkaul2m <manfred.kaul(at)h-brs.de>, 2015
  * @license The MIT License (MIT)
  */
 

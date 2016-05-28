@@ -1,6 +1,6 @@
 /**
  * @overview geogebra
- * @author mkaul2m <Manfred.Kaul@h-brs.de>, 2015-2016
+ * @author mkaul2m <manfred.kaul(at)h-brs.de>, 2015-2016
  * @license The MIT License (MIT)
  * @see https://www.geogebra.org/wiki/en/Reference:Applet_Embedding
  *      https://dev.geogebra.org/trac/wiki/GeoGebraWeb

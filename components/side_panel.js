@@ -27,10 +27,15 @@ ccm.component( {
 
     // invoked on click on form submit button
     click_function: function(){
+
       console.log( document.location );
       console.log( document.referrer );
-      console.log( jQuery(this.parentElement.parentElement).find(":input").val() );
-      console.log( jQuery(this.parentElement.parentElement).find("textarea").val() );
+
+      var parent = jQuery(this.parentElement.parentElement);
+      console.log( parent.find(":input").val() );
+      console.log( parent.find("option:selected").val() );
+      console.log( parent.find("textarea").val() );
+
     },
 
     style: [ ccm.load, './css/side_panel.css' ]

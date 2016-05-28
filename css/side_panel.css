@@ -1,7 +1,7 @@
 /* The animation code */
 @keyframes side_panel {
-    from { width: 20px; background: #ccc; }
-    to { width: 250px; height: 50%; background: #eee; box-shadow: -5px -2px 16px 0px #4f693f; }
+    from { width: 20px; background: #ccc; opacity: 0.2; }
+    to { width: 40%; height: 50%; background: #eee; box-shadow: -5px -2px 16px 0px #4f693f; opacity: 0.8; }
 }
 
 .ccm-side_panel > .side_panel {
@@ -13,21 +13,24 @@
 
     width: 20px;
     background: #ccc;
-    opacity: 0.6;
+    opacity: 0.2;
 
     border-radius: 6px;
 }
 
 .ccm-side_panel > .side_panel:hover {
 
-    width: 250px;
+    width: 40%;
     height: 50%;
     background: #eee;
+    opacity: 0.8;
 
     box-shadow: -5px -2px 16px 0px #4f693f;
 
     animation-name: side_panel;  /* The animation call */
     animation-duration: 1s;
+    /* animation: fadeIn 1s ease-in-out 3s; */
+    animation-fill-mode: forwards;
 
 }
 
@@ -59,4 +62,11 @@
     text-align: center;
     text-decoration: none;
     width: 250px;
+}
+
+.ccm-side_panel > .side_panel > .content > .title,
+.ccm-side_panel > .side_panel > .content > input,
+.ccm-side_panel > .side_panel > .content > select,
+.ccm-side_panel > .side_panel > .content > textarea {
+    margin: 0.1em 0.3em 0.1em 0.3em;
 }

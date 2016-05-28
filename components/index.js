@@ -1,6 +1,6 @@
 /**
  * @overview index of ccm components in this GitHub Repository for demos
- * @author Manfred Kaul <manfred.kaul@h-brs.de> 2016
+ * @author Manfred Kaul <manfred.kaul(at)h-brs.de> 2016
  * @license The MIT License (MIT)
  */
 

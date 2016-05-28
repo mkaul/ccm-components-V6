@@ -25,7 +25,9 @@ ccm.component( {
     // html template must contain a side_panel, a label div and a content div
     html:  [ ccm.load, './json/side_panel_html.json' ],
 
-    // invoked on click on form submit button
+    position: 'right', // or left, top, bottom
+
+    // invoked by click on button
     click_function: function(){
 
       console.log( document.location );
@@ -59,6 +61,14 @@ ccm.component( {
      */
     var self = this;
 
+    /**
+     * @summary whitelist of valid positions for config parameter position
+     * @private
+     */
+    var valid_positions = [ 'top', 'left', 'bottom', 'right' ];
+    var rotations = [ 0, -90, 0, -90 ];
+    var offsets = [ 0, 1, 0, -1 ];
+
     /*------------------------------------------- public instance methods --------------------------------------------*/
 
     /**
@@ -78,12 +88,27 @@ ccm.component( {
         ccm.helper.html(
           self.html.main, // template must contain a side_panel, a label div and a content div
             {
-              click: self.click_function  // template parameters
+              click: self.click_function  // template parameter
             }
       ) );
 
       var panel_div = element.find('div.side_panel');
       var label_div = panel_div.find('div.label');
+
+      if ( self.position ){
+        var idx = valid_positions.indexOf( self.position ); // white list of valid parameters
+        var offset;
+        if ( idx >= 0 ){
+
+          panel_div.css( 'right', 'auto' );
+          panel_div.css( self.position, 0 );
+
+          label_div.css( 'right', 'auto' );
+          label_div.css( 'transform', 'rotate(' + ( rotations[idx] ) + 'deg)' );
+          label_div.css( self.position, offsets[idx] + 'em' );
+        }
+      }
+
       var content_div = panel_div.find('div.content');
       content_div.hide();
 

@@ -64,14 +64,18 @@
                 {
                   "tag": "option",
                   "value": "suggestion",
-                  "inner": "Verbesserungsvorschlag",
-                  "selected": true
+                  "inner": "Verbesserungsvorschlag"
                 },
                 {
                   "tag": "option",
                   "value": "spam",
                   "inner": "Spam melden",
                   "title": "Zum Beispiel ein unlauterer Beitrag eines Studierenden."
+                },
+                {
+                  "tag": "option",
+                  "value": "mobbing",
+                  "inner": "Mobbing melden"
                 },
                 {
                   "tag": "option",

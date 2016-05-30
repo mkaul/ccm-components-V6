@@ -24,7 +24,7 @@ ccm.component( {
   config: {
 
     key: 'test',
-    store: [ ccm.store, { db: 'redis', store: 'table', url: 'wss://ccm.inf.h-brs.de:8888/index.js' } ],
+    store: [ ccm.store, { db: 'redis', store: 'table', url: 'ws://ccm2.inf.h-brs.de/index.js' } ],
     style: [ ccm.load, './css/table.css' ]
 
   },
@@ -317,7 +317,6 @@ ccm.component( {
    * @property {ccm.style} style - css for own content
    * @property {string} text_button - caption of send button
    * @property {string} text_placeholder - value for placeholder of input fields
-   * @property {ccm.instance} user - <i>ccm</i> instance for user authentication
    */
 
   /**
@@ -331,7 +330,6 @@ ccm.component( {
    * @summary chat message
    * @typedef {ccm.dataset} ccm.components.chat.message
    * @property {string} text - message text
-   * @property {string} user - username of creator
    */
 
 } );

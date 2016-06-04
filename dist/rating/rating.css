@@ -1,0 +1,3 @@
+.ccm-rating{font-family:Verdana,Arial,sans-serif;color:#879496}.ccm-rating>.rating,.ccm-rating>.rating>.likes,.ccm-rating>.rating>.dislikes{display:flex;justify-content:flex-end;align-content:space-between;justify-items:center;align-items:center;cursor:pointer}
+.ccm-rating>.rating>.likes>div,.ccm-rating>.rating>.dislikes>div{padding:.1em;font-size:85%}
+.ccm-rating>.rating>.stars{cursor:pointer;font-size:1.3em}.ccm-rating>.user>.selected{color:#009ee0}

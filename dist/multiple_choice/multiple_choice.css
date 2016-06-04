@@ -1,0 +1,3 @@
+.ccm-multiple_choice{overflow:auto}.ccm-multiple_choice>*>div{display:table;border:.05em solid black}
+.ccm-multiple_choice>*>div>div{display:table-row}.ccm-multiple_choice>*>div>div>div{display:table-cell;border:.05em solid black;padding:.3em}
+.ccm-multiple_choice>*>div>div>.right{background-color:lime}.ccm-multiple_choice>*>div>div>.wrong{background-color:red}

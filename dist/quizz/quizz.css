@@ -1,0 +1,12 @@
+.ccm-quizz{font-family:Arial,serif;overflow-x:auto;padding:.5em;line-height:normal}
+.ccm-quizz>.title{background-color:transparent;border:0;color:inherit;font-family:inherit;font-size:inherit;margin-bottom:auto;padding:0}
+.ccm-quizz>.current_question>.question>*>.answers>.answer>div>.text{border:0}.ccm-quizz>.current_question>.question>.comment,.ccm-quizz>.current_question>.question>.result>.answers>.answer>.comment{background-image:none}
+.ccm-quizz>.title>div{font-weight:bold;padding-bottom:1em}.ccm-quizz>.description>div{padding-bottom:1em}
+.ccm-quizz>.current_question>.question>div:first-child>span:first-child{font-weight:bold}
+.ccm-quizz>.current_question>.question>.comment>div{padding:.5em 0;font-size:80%;font-style:italic}
+.ccm-quizz>.current_question>.question>*>.answers{display:inline-block;padding:.5em 0}
+.ccm-quizz>.current_question>.question>*>.answers>.answer>div:first-child{display:flex;flex-direction:row;align-items:center;padding:.2em 1em .2em 0}
+.ccm-quizz>.current_question>.question>*>.answers>.answer>div:first-child>div{display:inline-table;padding-left:1em}
+.ccm-quizz>.current_question>.question>.result>.answers>.right>div:first-child{background-color:lime}
+.ccm-quizz>.current_question>.question>.result>.answers>.wrong>div:first-child{background-color:red}
+.ccm-quizz>.current_question>.question>.result>.answers>.answer>.comment>div{padding-bottom:.5em;font-size:80%;font-style:italic}

@@ -1,0 +1,1 @@
+ccm.callback["mass_document_view_html.json"]({"main":{"tag":"div","class":"item","inner":[{"tag":"div","class":"title","inner":"%key%"},{"tag":"div","inner":"%description%"},{"tag":"div","inner":"%links%"}]}});

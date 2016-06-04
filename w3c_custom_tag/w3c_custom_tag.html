@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="DE">
+<meta charset="utf-8">
+<script src="../libs/jquery.min.js"></script>
+<script src="../libs/ccm.min.js"></script>
+<script>
+
+    // Demo of integrating ccm with W3C WebComponent Technique Custom Element
+    // such that ccm components can be included into HTML via custom tags
+    // http://webcomponents.org/polyfills/custom-elements/
+
+    // 1. browser switch
+    if ('registerElement' in document &&
+            'createShadowRoot' in HTMLElement.prototype &&
+            'import' in document.createElement('link') &&
+            'import' in document.createElement('link')
+    ) console.log('Woohoo! Browser has native WC support!');
+    else {
+        // Chrome and Opera are W3C WebComponent ready, but Firefox and Safari need additional help
+        // Firefox https://developer.mozilla.org/en-US/docs/Web/Web_Components#Enabling_Web_Components_in_Firefox
+        document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/document-register-element/0.5.3/document-register-element.js"><\/script>');
+        document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.22/webcomponents-lite.min.js"><\/script>');
+    }
+
+
+    // 2. register ccm component as new element
+    newElement('ccm-element', {
+
+        createdCallback: function () {
+            ccm.render('../' + this.dataset.component + '/ccm.'+ this.dataset.component + '.js' );
+        },
+
+        addMoreText: function (s) {
+            this.textContent = this.textContent + s;
+        }
+
+    });
+
+    function newElement(name, proto) {
+        $(document).ready(function () {
+            var ep = Object.create(HTMLElement.prototype);
+            Object.keys(proto).forEach(function(key) {
+                ep[key] = proto[key];
+            });
+            document.registerElement(name, {prototype: ep});
+        });
+    }
+
+</script>
+
+
+
+<!-- 3. Call ccm component via custom tag -->
+<ccm-element data-component="clock"></ccm-element>

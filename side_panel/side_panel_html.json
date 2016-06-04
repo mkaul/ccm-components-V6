@@ -1,0 +1,128 @@
+{
+  "comment": "html template for side_panel must contain at least a side_panel div, a label div and a content div",
+  "author": "Manfred Kaul <manfred.kaul(at)h-brs.de> 2016",
+
+  "main":
+    {
+      "tag": "div",
+      "class": "side_panel",
+      "inner": [
+        {
+          "tag": "div",
+          "class": "label",
+          "inner": "Feedback"
+        },
+        {
+          "tag": "button",
+          "class": "close",
+          "inner": "x"
+        },
+        {
+          "tag": "div",
+          "class": "content",
+          "inner": [
+            {
+              "tag": "div",
+              "class": "title",
+              "inner": "Feedback"
+            },
+            {
+              "tag": "input",
+              "type": "text",
+              "name": "title",
+              "placeholder": "Mein Vorschlag",
+              "title": "Kurzer Titel Ihres Feedbacks",
+              "required": "required"
+            },
+            {
+              "tag": "select",
+              "name": "kind",
+              "size": "3",
+              "multiple": "multiple",
+              "title": "Art des Feedbacks",
+              "inner": [
+                {
+                  "tag": "option",
+                  "value": "slide",
+                  "inner": "Fehler in Folien"
+                },
+                {
+                  "tag": "option",
+                  "value": "exercise",
+                  "inner": "Fehler in Aufgabe"
+                },
+                {
+                  "tag": "option",
+                  "value": "quizz",
+                  "inner": "Fehler in Quizz"
+                },
+                {
+                  "tag": "option",
+                  "value": "video",
+                  "inner": "Fehler in Video"
+                },
+                {
+                  "tag": "option",
+                  "value": "bug",
+                  "inner": "Software-Bug"
+                },
+                {
+                  "tag": "option",
+                  "value": "suggestion",
+                  "inner": "Verbesserungsvorschlag"
+                },
+                {
+                  "tag": "option",
+                  "value": "spam",
+                  "inner": "Spam melden",
+                  "title": "Zum Beispiel ein unlauterer Beitrag eines Studierenden."
+                },
+                {
+                  "tag": "option",
+                  "value": "mobbing",
+                  "inner": "Mobbing melden"
+                },
+                {
+                  "tag": "option",
+                  "value": "praise",
+                  "inner": "Lob"
+                },
+                {
+                  "tag": "option",
+                  "value": "criticism",
+                  "inner": "Konstruktive Kritik"
+                },
+                {
+                  "tag": "option",
+                  "value": "problem",
+                  "inner": "Problem"
+                },
+                {
+                  "tag": "option",
+                  "value": "innovation",
+                  "inner": "Innovationsidee"
+                },
+                {
+                  "tag": "option",
+                  "value": "other",
+                  "inner": "Sonstiges"
+                }
+              ]
+            },
+            {
+              "label": "Feedback:",
+              "name": "text",
+              "tag": "textarea",
+              "rows": "10",
+              "placeholder": "Hier Feedback eingeben..."
+            },
+            {
+              "tag": "button",
+              "inner": "Abschicken!",
+              "onclick": "%click%"
+            }
+          ]
+        }
+      ]
+    }
+}

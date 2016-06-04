@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="DE">
+<html lang="EN">
 <meta charset="utf-8">
 <script src="../libs/jquery.min.js"></script>
 <script src="../libs/ccm.min.js"></script>
@@ -27,7 +27,9 @@
     newElement('ccm-element', {
 
         createdCallback: function () {
-            ccm.render('../' + this.dataset.component + '/ccm.'+ this.dataset.component + '.js' );
+            ccm.render('../' + this.dataset.component + '/ccm.'+ this.dataset.component + '.js', {
+                element: jQuery('div.demo')
+            } );
         },
 
         addMoreText: function (s) {
@@ -49,6 +51,13 @@
 </script>
 
 
+<h1>W3C custom tag demo</h1>
+<pre>
+    &lt;!-- Call ccm component via W3C custom tag -->
+    &lt;ccm-element data-component="clock">&lt;/ccm-element>
 
+</pre>
+
+<div class="demo"></div>
 <!-- 3. Call ccm component via custom tag -->
 <ccm-element data-component="clock"></ccm-element>

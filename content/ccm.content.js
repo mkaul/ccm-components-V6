@@ -23,7 +23,7 @@ ccm.component( {
   config: {
 
     content: [ 'Hello <b>lang#world</b>!', { tag: 'br' }, '<i>this is example content</i>' ],
-    lang:  [ ccm.instance, 'http://mkaul.github.io/ccm-components/lib/components/lang.js', { store: [ ccm.store, '../content/content_lang.json' ] } ]
+    lang:  [ ccm.instance, 'http://mkaul.github.io/ccm-components/dist/lang/lang.js', { store: [ ccm.store, '../content/content_lang.json' ] } ]
 
   },
 

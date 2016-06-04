@@ -1,0 +1,6 @@
+@keyframes side_panel{from{width:20px;background:#ddd;opacity:.3}to{width:40%;height:50%;background:#eee;box-shadow:-5px -2px 16px 0 #4f693f;opacity:.8}
+}.ccm-side_panel>.side_panel{position:fixed;vertical-align:middle;top:32%;right:0;padding:20px;width:20px;background:#ddd;opacity:.2;border-radius:6px}
+.ccm-side_panel>.side_panel:not(.no-hover):hover{width:40%;height:50%;background:#eee;opacity:.8;box-shadow:-5px -2px 16px 0 #4f693f;animation-name:side_panel;animation-duration:1s}
+.ccm-side_panel>.side_panel>.label{color:white;font-size:x-large;font-weight:bolder;text-align:center;position:relative;top:32%;right:-1em;transform:rotate(-90deg);z-index:999;width:135px;height:198px;cursor:pointer}
+.ccm-side_panel>.side_panel>.content{background:#626c6e none repeat scroll 0 0;border-radius:6px;color:#fff;display:block;font-family:Arial,sans-serif;font-size:17px;font-weight:bold;padding:5px;margin:0;text-align:center;text-decoration:none;width:250px}
+.ccm-side_panel>.side_panel>.content>.title,.ccm-side_panel>.side_panel>.content>input,.ccm-side_panel>.side_panel>.content>select,.ccm-side_panel>.side_panel>.content>textarea{margin:.1em .3em .1em .3em}

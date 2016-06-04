@@ -1,0 +1,1 @@
+ccm.callback["blank_html.json"]({"main":[{"tag":"div","class":"title"},{"tag":"div","class":"text","inner":"%h%, %w%!"}]});

@@ -1,4 +1,0 @@
-.ccm-menu>.menu_entries{display:flex;display:-webkit-flex;justify-content:space-between;-webkit-justify-content:space-between;flex-wrap:wrap;-webkit-flex-wrap:wrap;margin:10px;border:2px solid #ddd;border-radius:10px;color:white}
-.ccm-menu>.menu_entries>.menu_entry{flex-grow:1;-webkit-flex-grow:1;margin:.15em;border-radius:1em;padding:.3em .6em;text-align:center;font-weight:bold;cursor:pointer}
-.ccm-menu>.menu_entries>.menu_entry:not(.menu_selected){background-color:#ddd}.ccm-menu>.menu_entries>.menu_selected{background-color:#0095dd}
-.ccm-menu>.menu_entries>.menu_entry:hover{background-color:#64f8ff}

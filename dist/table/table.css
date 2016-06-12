@@ -1,3 +1,0 @@
-.ccm-table{display:table;border:.05em solid black;overflow:auto}.ccm-table>div{display:table-row}
-.ccm-table>div>div{display:table-cell;border:.05em solid black;padding:.3em}.ccm-table>div>div:not(.edit):not(.not):hover{background-color:lightgray;cursor:cell}
-.ccm-table>div>div>span{padding:0 1em}.ccm-table>div>div>input{border:0;font-size:100%;font-family:inherit;padding:0}

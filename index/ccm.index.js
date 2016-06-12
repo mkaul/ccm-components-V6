@@ -28,8 +28,8 @@ ccm.component( {
     style: [ ccm.load, '../index/index.css' ],
 
     // *** import subcomponents ***
-    lang:     [ ccm.instance,  'http://mkaul.github.io/ccm-components/dist/lang/lang.js', { store: [ ccm.store, '../index/index_lang.json' ] } ],
-    langmenu: [ ccm.instance,  'http://mkaul.github.io/ccm-components/dist/langmenu/langmenu.js', { element: jQuery('#langmenu'), context: false, selected: 'en' } ],
+    lang:     [ ccm.instance,  'http://mkaul.github.io/ccm-components/resources/lang/lang.js', { store: [ ccm.store, '../index/index_lang.json' ] } ],
+    langmenu: [ ccm.instance,  'http://mkaul.github.io/ccm-components/resources/langmenu/langmenu.js', { element: jQuery('#langmenu'), context: false, selected: 'en' } ],
     menu:     [ ccm.component, '../menu/ccm.menu.js' ]
 
   },

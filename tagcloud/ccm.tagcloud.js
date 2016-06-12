@@ -36,7 +36,7 @@ ccm.component( {
 
     // https://github.com/addywaddy/jquery.tagcloud.js
     jquery_tagcloud_lib: [ ccm.load, '../libs/jquery.tagcloud.min.js' ],
-    lang:  [ ccm.instance, 'http://mkaul.github.io/ccm-components/dist/lang/lang.js', { store: [ ccm.store, '../tagcloud/tagcloud_lang.json' ] } ]
+    lang:  [ ccm.instance, 'http://mkaul.github.io/ccm-components/resources/lang/lang.js', { store: [ ccm.store, '../tagcloud/tagcloud_lang.json' ] } ]
 
   },
 

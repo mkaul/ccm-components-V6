@@ -25,7 +25,7 @@ ccm.component( {
 
     html:          [ ccm.load, '../quizz/quizz_html.json' ],
     key:           'example',
-    lang:          [ ccm.instance, 'http://mkaul.github.io/ccm-components/dist/lang/lang.js', { store: [ ccm.store, '../quizz/quizz_lang.json' ] } ],
+    lang:          [ ccm.instance, 'http://mkaul.github.io/ccm-components/resources/lang/lang.js', { store: [ ccm.store, '../quizz/quizz_lang.json' ] } ],
     onAnswer:      function ( result ) { console.log( result ); },
     onFinish:      function ( result ) { console.log( result ); result.quizz.render(); return false; },
     store:         [ ccm.store, '../quizz/quizz.json' ],

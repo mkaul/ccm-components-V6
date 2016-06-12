@@ -27,7 +27,7 @@ ccm.component( {
     browser_overhead: 11, // time in milliseconds used by browser to execute clock loop
     // depends on the browser. 11 msec is for Chrome.
     style: [ ccm.load, '../clock/clock.css' ],
-    lang:  [ ccm.instance, 'http://mkaul.github.io/ccm-components/dist/lang/lang.js', { store: [ ccm.store, '../clock/clock_lang.json' ] } ] // multi-lingual
+    lang:  [ ccm.instance, 'http://mkaul.github.io/ccm-components/resources/lang/lang.js', { store: [ ccm.store, '../clock/clock_lang.json' ] } ] // multi-lingual
 
   },
 

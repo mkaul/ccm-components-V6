@@ -17,7 +17,12 @@
         $('#main_content').headsmart()
       })
     </script>
-    <title>Ccm-components by mkaul</title>
+
+    <title>ccm-components by mkaul</title>
+
+    <script type="text/javascript" src="./libs/ccm.min.js"></script>
+    <script type="text/javascript" src="./resources/w3c_custom_tag/w3c_custom_tag.js"></script>
+
   </head>
 
   <body>
@@ -28,7 +33,7 @@
         <span class="ribbon-outer">
           <span class="ribbon-inner">
             <h1>Ccm-components</h1>
-            <h2>Components of the Client Side Component Model (ccm)</h2>
+            <h2>Components of the Clientside Component Model (<i>ccm</i>)</h2>
           </span>
           <span class="left-tail"></span>
           <span class="right-tail"></span>
@@ -51,12 +56,22 @@
 
 <p>ccm is a client component model. The client ist the browser, which loads web components on demand from any -maybe cross domain- servers. Every web component consists of CSS, JavaScript and JSON files. JavaScript is used to render HTML into div-s. No iFrames are used.   </p>
 
-        <p>The <a href="https://github.com/akless/ccm-components/wiki/Einstieg:-Was-ist-ccm%3F">Client Side Component Model (ccm)</a> is yet another componentization model for the Web. It is based on a framework developed by André Kless in his master thesis 2015 at the University of Applied Sciences Bonn-Rhein-Sieg introducing JavaScript+CSS-JSON-components which may be loaded cross-domain cross-platform via <a href="https://en.wikipedia.org/wiki/JSONP">JSONP</a> and rendered into any div or span in any web page. For introductory tutorials see the Wiki Pages in his <a href="https://github.com/akless/ccm-components">GitHub repository</a> </p>
+        <p>The <a href="https://github.com/akless/ccm-components/wiki/Einstieg:-Was-ist-ccm%3F">Clientside Component Model (<i>ccm</i>)</a> is yet another componentization model for the Web. It is based on a framework developed by André Kless in his master thesis 2015 at the University of Applied Sciences Bonn-Rhein-Sieg introducing JavaScript+CSS-JSON-components which may be loaded cross-domain cross-platform via <a href="https://en.wikipedia.org/wiki/JSONP">JSONP</a> and rendered into any div or span in any web page. For introductory tutorials see the Wiki Pages in his <a href="https://github.com/akless/ccm-components">GitHub repository</a> </p>
 
         <h3>Demo Pages</h3>
         <ul>
-          <li><a href="index/index.html">index of ccm components of this repository</a></li>
-          <li><a href="w3c_custom_tag/w3c_custom_tag.html">W3C custom tag</a></li>
+          <li><div class="index"></div></li>
+          <li>
+<pre>
+    &lt;!-- Call ccm component via W3C custom tag -->
+    &lt;ccm-element data-component="clock">&lt;/ccm-element>
+
+</pre>
+
+            <div class="demo"></div>
+            <!-- 3. Call ccm component via custom tag -->
+            <ccm-element data-component="clock"></ccm-element>
+          </li>
         </ul>
       </section>
 
@@ -74,6 +89,8 @@
 
     </div>
 
-    
+  <script>
+    ccm.render( 'resources/index/ccm.index.js', jQuery('div.index') );
+  </script>
   </body>
 </html>

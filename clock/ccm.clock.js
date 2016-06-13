@@ -53,7 +53,7 @@ ccm.component( {
      * public clock object accessible by other components
      * @type {object}
      */
-    self.digital_clock = (function(){
+    this.digital_clock = (function(){
       // encapsulate object via function scope via IIFE pattern
       // see https://en.wikipedia.org/wiki/Immediately-invoked_function_expression
 

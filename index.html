@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <script src="libs/ccm.min.js"></script>
   </head>
   <body>
     <section class="page-header">
@@ -24,6 +25,10 @@
 
 <p>ccm is a client side component model. The client is the browser, which loads web components on demand from any -maybe cross domain- servers. Every web component consists of CSS, JavaScript and JSON files. JavaScript is used to render HTML into div-s and span-s. No iFrames are used.   </p>
 
+      <p>The <a href="https://github.com/akless/ccm-components/wiki/Einstieg:-Was-ist-ccm%3F">Clientside Component Model (<i>ccm</i>)</a> is yet another componentization model for the Web. It is based on a framework developed by André Kless in his master thesis 2015 at the University of Applied Sciences Bonn-Rhein-Sieg introducing JavaScript+CSS-JSON-components which may be loaded cross-domain cross-platform via <a href="https://en.wikipedia.org/wiki/JSONP">JSONP</a> and rendered into any div or span in any web page. For introductory tutorials see the Wiki Pages in his <a href="https://github.com/akless/ccm-components">GitHub repository</a> </p>
+
+      <div class="index"></div>
+
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/mkaul/ccm-components">ccm-components</a> is maintained by <a href="https://github.com/mkaul">mkaul</a>.</span>
 
@@ -32,6 +37,8 @@
 
     </section>
 
-  
+    <script>
+      ccm.render( 'resources/index/ccm.index.js', jQuery('div.index') );
+    </script>
   </body>
 </html>

@@ -24,7 +24,7 @@ ccm.component( {
   config: {
 
     key: 'leistungen',
-    //lang: [ ccm.instance, './components/lang.js', { store: [ ccm.store, './json/multiple_choice_lang.json' ] } ],
+    //lang: [ ccm.instance, './components/lang.js', { store: [ ccm.store, '../multiple_choice/multiple_choice_lang.json' ] } ],
     store: [ ccm.store, '../quizz/quizz.json' ],
     style: [ ccm.load, '../multiple_choice/multiple_choice.css' ]
 

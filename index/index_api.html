@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="EN">
+<meta charset="utf-8">
+<script src="../libs/jquery.min.js"></script>
+<script src="../libs/ccm.min.js"></script>
+
+<div class="index"></div>
+<div class="side_panel"></div>
+
+<script>
+
+    ccm.render( '../index/ccm.index.js', {
+      element: jQuery('div.index'),
+      menu_content: function( next_component ){
+        // http://mkaul.github.io/ccm-components/api/blank/index.html
+        return '<a href="' + 'http://mkaul.github.io/ccm-components/api/' + next_component + '/index.html' +
+        '" target="_blank" style="margin: 20px;">' + next_component +
+        ' API</a>'
+      }
+    } );
+
+</script>

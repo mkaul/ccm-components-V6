@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="EN">
+<meta charset="utf-8">
+<script src="../libs/jquery.min.js"></script>
+<script src="../libs/ccm.min.js"></script>
+
+<div class="index"></div>
+<div class="side_panel"></div>
+
+<script>
+
+  // render API into iFrame
+  ccm.render( '../index/ccm.index.js', {
+    element: jQuery('div.index'),
+    menu_content: function( next_component ){
+      // http://mkaul.github.io/ccm-components/api/blank/index.html
+      return '<iframe src="' + 'http://mkaul.github.io/ccm-components/api/' + next_component + '/index.html' +
+      '" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true">' +
+      ' Your browser doesn´t support iframes. ' +
+      '</iframe>'
+    }
+  } );
+
+</script>

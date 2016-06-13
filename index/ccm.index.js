@@ -23,14 +23,19 @@ ccm.component( {
   config: {
 
     html:  [ ccm.load, '../index/index_html.json' ],  // html template
-    key:   'index',                                  // key in ccm.store
+    key:   'index',                                   // key in ccm.store
     store: [ ccm.store, '../index/index.json' ],      // data store
     style: [ ccm.load, '../index/index.css' ],
 
+    menu:     [ ccm.component, '../menu/ccm.menu.js' ],
+    menu_content: function( menu_entry ){ // which menu content per menu entry
+      // render component into menu body
+      return [ ccm.proxy, '../' + menu_entry + '/ccm.' + menu_entry + '.js' ];
+    },
+
     // *** import subcomponents ***
     lang:     [ ccm.instance,  'http://mkaul.github.io/ccm-components/resources/lang/lang.js', { store: [ ccm.store, '../index/index_lang.json' ] } ],
-    langmenu: [ ccm.instance,  'http://mkaul.github.io/ccm-components/resources/langmenu/langmenu.js', { element: jQuery('#langmenu'), context: false, selected: 'en' } ],
-    menu:     [ ccm.component, '../menu/ccm.menu.js' ]
+    langmenu: [ ccm.instance,  'http://mkaul.github.io/ccm-components/resources/langmenu/langmenu.js', { element: jQuery('#langmenu'), context: false, selected: 'en' } ]
 
   },
 
@@ -107,8 +112,10 @@ ccm.component( {
 
                   all_config_elements.push(
                     {
+
                       label:   next_component,
-                      content: [ ccm.proxy, '../' + next_component + '/ccm.' + next_component + '.js' ]
+                      content: self.menu_content( next_component )
+
                     }
                   );
                   return all_config_elements;

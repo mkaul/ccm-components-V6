@@ -1,6 +1,6 @@
 {
   "name": "ccm-components",
   "tagline": "Components of the Clientside Component Model (ccm)",
-  "body": "### Welcome to ccm Pages.\r\nccm is a client side component model. The client ist the browser, which loads web components on demand from any -maybe cross domain- servers. Every web component consists of CSS, JavaScript and JSON files. JavaScript is used to render HTML into div-s. No iFrames are used.   ",
+  "body": "### Welcome to ccm-components pages.\r\nccm is a client side component model. The client is the browser, which loads web components on demand from any -maybe cross domain- servers. Every web component consists of CSS, JavaScript and JSON files. JavaScript is used to render HTML into div-s and span-s. No iFrames are used.   ",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }

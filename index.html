@@ -6,19 +6,21 @@
     <title>ccm-components by mkaul</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+
+    <script src="libs/ccm.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   </head>
   <body>
 
       <header>
-        <h1>ccm-components</h1>
-        <p>Components of the Clientside Component Model (ccm)</p>
+        <h1>ccm-components by mkaul</h1>
       </header>
 
       <div id="banner">
@@ -36,20 +38,33 @@
 
     <div class="wrapper">
       <nav>
-        <ul></ul>
+        <ul><li><a href="#basics">Basics</a></li><li><a href="#w3c_custom_tag">W3C Custom Tag</a></li></ul>
       </nav>
       <section>
         <h3>
-<a id="welcome-to-ccm-pages" class="anchor" href="#welcome-to-ccm-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to ccm Pages.</h3>
+<a id="welcome-to-ccm-pages" class="anchor" href="#welcome-to-ccm-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to ccm-components Pages by mkaul.</h3>
 
-<p>ccm is a client component model. The client ist the browser, which loads web components on demand from any -maybe cross domain- servers. Every web component consists of CSS, JavaScript and JSON files. JavaScript is used to render HTML into div-s. No iFrames are used.   </p>
-      </section>
+<p>ccm is a clientside component model. The client ist the browser, which loads web components on demand from any -maybe cross domain- servers. Every web component consists of CSS, JavaScript and JSON files. JavaScript is used to render HTML into div-s. No iFrames are used.   </p>
+
+          <h3>ccm Basics</h3>
+          <p>The <a href="https://github.com/akless/ccm-components/wiki/Einstieg:-Was-ist-ccm%3F">Clientside Component Model (<i>ccm</i>)</a> is yet another componentization model for the Web. It is based on a framework developed by André Kless in his master thesis 2015 at the University of Applied Sciences Bonn-Rhein-Sieg introducing JavaScript+CSS-JSON-components which may be loaded cross-domain cross-platform via <a href="https://en.wikipedia.org/wiki/JSONP">JSONP</a> and rendered into any div or span in any web page. For introductory tutorials see the Wiki Pages in his <a href="https://github.com/akless/ccm-components">GitHub repository</a> </p>
+
+
+            <h3>Index of ccm-components of this repo</h3>
+            <div class="index"></div>
+
+        </section>
+
+
       <footer>
         <p>Project maintained by <a href="https://github.com/mkaul">mkaul</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+
+      <script>
+          ccm.render( 'resources/index/ccm.index.js', jQuery('div.index') );
+      </script>
   </body>
 </html>

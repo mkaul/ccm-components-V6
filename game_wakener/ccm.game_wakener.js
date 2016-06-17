@@ -249,10 +249,10 @@ ccm.component( /** @lends ccm.components.game_wakener */ {
   /**
    * @summary <i>ccm</i> instance configuration
    * @typedef {ccm.types.config} ccm.components.game_wakener.types.config
-   * @property {ccm.types.element} element - <i>ccm</i> instance website area
+   * @property {ccm.type.element} element - <i>ccm</i> instance website area
    * @property {string} classes - html classes for own website area
-   * @property {ccm.types.url} style - URL to a css file which contains the styles for own website area
-   * @property {ccm.types.dependency} lang - <i>ccm</i> component
+   * @property {ccm.type.dependency} style - URL to a css file which contains the styles for own website area
+   * @property {ccm.type.dependency} lang - <i>ccm</i> instance for language switching (i18n)
    */
 
   /**

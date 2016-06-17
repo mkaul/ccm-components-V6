@@ -4,7 +4,7 @@
  * @license The MIT License (MIT)
  */
 
-ccm.component( /** @lends ccm.components.chat */ {
+ccm.component( /** @lends ccm.components.game_wakener */ {
 
   /*-------------------------------------------- public component members --------------------------------------------*/
 

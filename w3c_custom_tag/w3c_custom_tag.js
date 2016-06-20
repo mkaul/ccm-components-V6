@@ -9,7 +9,7 @@
 if ('registerElement' in document &&
   'createShadowRoot' in HTMLElement.prototype &&
   'import' in document.createElement('link') &&
-  'import' in document.createElement('link')
+  'content' in document.createElement('template')
 ) console.log('Woohoo! Browser has native WC support!');
 else {
   // Chrome and Opera are W3C WebComponent ready, but Firefox and Safari need additional help
@@ -35,11 +35,16 @@ newElement('ccm-element', {
 });
 
 function newElement(name, proto) {
-  $(document).ready(function () {
+
+  $(document).ready(function () { // waiting for dynamic script loading
+    
     var ep = Object.create(HTMLElement.prototype);
+
     Object.keys(proto).forEach(function(key) {
       ep[key] = proto[key];
     });
+
     document.registerElement(name, {prototype: ep});
   });
+
 }

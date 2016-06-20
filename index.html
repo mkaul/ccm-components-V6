@@ -30,10 +30,15 @@
       <p>The <a href="https://github.com/akless/ccm-components/wiki/Einstieg:-Was-ist-ccm%3F">Client-side Component Model (<i>ccm</i>)</a> is a componentization model for the Web. It is based on the master thesis of André Kless, 2015, at the University of Applied Sciences Bonn-Rhein-Sieg introducing JavaScript+CSS-JSON-components which may be loaded cross-domain via <a href="https://en.wikipedia.org/wiki/JSONP">JSONP</a> and rendered into any div or span in any web page. For introductory tutorials see the Wiki Pages in his <a href="https://github.com/akless/ccm-components">GitHub repository</a> </p>
 
         <h3>W3C custom elements</h3>
-        <a target=\"_blank\" href=\"http://www.w3.org/TR/custom-elements/\">W3C custom elements</a> can easily be realized via <i>ccm</i> components e.g. as follows. A tighter integration into ccm will follow soon.
+        <a target=\"_blank\" href=\"http://www.w3.org/TR/custom-elements/\">W3C custom elements</a> can easily be realized via <i>ccm</i> components e.g. as follows.
         <pre>
-            &lt;!-- Call ccm component via W3C custom tag -->
+            &lt;!-- Call <i>ccm</i> component via W3C custom element -->
             &lt;ccm-element data-component="clock">&lt;/ccm-element>
+        </pre>
+        A tighter integration into <i>ccm</i> will follow soon:
+        <pre>
+            &lt;!-- Call <i>ccm</i> component via W3C custom element -->
+            &lt;ccm-clock data-config="">&lt;/ccm-clock>
         </pre>
 
         <h3><i>ccm</i> components API</h3>

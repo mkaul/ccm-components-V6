@@ -1,0 +1,35 @@
+.ccm-learn_cards {
+
+    width: 80%;
+    margin: 1em;
+    padding: 1em;
+    box-shadow: -5px -2px 16px 0px #4f693f;
+    border-radius: 6px;
+    border: 3px solid #4f693f;
+
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    background-color: lightgrey;
+
+}
+
+.ccm-learn_cards button {
+    margin: 30px;
+    padding: 20px;
+    border-width: 6px;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: x-large;
+    font-weight: bolder;
+    color: black;
+}
+
+.ccm-learn_cards button#known {
+    color: green;
+}
+
+.ccm-learn_cards button#unknown {
+    color: red;
+}

@@ -1,0 +1,13 @@
+{
+  "de": [
+    {
+       "tag": "h2",
+       "inner": "Nennen Sie den passenden Begriff zu folgender Umschreibung:"
+    },
+    {
+        "tag": "div",
+        "class": "card",
+        "inner": "todo"
+    }
+  ]
+}

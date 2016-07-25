@@ -33,3 +33,9 @@
 .ccm-learn_cards button#unknown {
     color: red;
 }
+
+.ccm-learn_cards .source {
+    font-size: small;
+    font-weight: lighter;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

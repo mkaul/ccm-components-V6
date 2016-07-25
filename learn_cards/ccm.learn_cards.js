@@ -77,6 +77,7 @@ ccm.component( /** @lends ccm.components.learn_cards */ {
           '<div class="question"></div>' +
           '<button class="answer">Zeige Antwort</button>' +
           '<div class="answer"></div>' +
+          '<div class="source"></div>' +
         '</div>' +
         '<div class="next">' +
         '<button id="known" class="next">gewusst</button>' +
@@ -86,15 +87,17 @@ ccm.component( /** @lends ccm.components.learn_cards */ {
       var question_div = element.find('div.question');
       var answer_div = element.find('div.answer');
       
-      var known_button = element.find('button.known');
-      var unknown_button = element.find('button.unknown');
-      
-      element.find('div.answer').toggle();
-      element.find('div.next').toggle();
+      function toggle_answer(display){
+        element.find('div.answer').toggle(display);
+        element.find('div.source').toggle(display);
+        element.find('div.next').toggle(display);
+      }
+  
+      // initially hide answer area
+      toggle_answer();
   
       element.find('button.answer').click(function () {
-        element.find('div.answer').toggle();
-        element.find('div.next').toggle();
+        toggle_answer();
       });
   
       // get dataset for rendering
@@ -105,12 +108,32 @@ ccm.component( /** @lends ccm.components.learn_cards */ {
          * @type {int}
          */
         var index = 0;
+
+        /**
+         * array of indices of all unknown questions
+         * initially all questions
+         * therefore set unknown = array [0,1,2,3, ... ]
+         * @type {Array}
+         */
         var unknown = Array.apply(null, {length: dataset.length}).map(Number.call, Number);
   
         function next_question(){
+          
           index = Math.floor( unknown.length * Math.random() );
-          question_div.html( dataset[unknown[index]].question );
-          answer_div.html( dataset[unknown[index]].answer );
+          var data = dataset[unknown[index]];
+          question_div.html( data.question );
+          answer_div.html( data.answer );
+          if (data.source){
+            element.find('div.source').html(
+              '<a href="' +
+              data.source +
+              '" target="_blank">' +
+              data.source.replace(/^https?\:\/\//i, "") +
+              '</a>'
+            );
+          } else {
+            element.find('div.source').html('');
+          }
         }
         
         next_question();
@@ -120,14 +143,14 @@ ccm.component( /** @lends ccm.components.learn_cards */ {
           if ( jQuery(this).attr('id') === 'known' ){
             unknown.remove(index);
             if (unknown.length === 0){
-              element.find('div.card').html('<h1>Herzlichen Glückwunsch! Alles gewusst!</h1>');
+              element.find('div.card').html('<h1>Herzlichen Glückwunsch!</h1> <h1>Alles gewusst!</h1>');
+              element.find('h2').hide();
               element.find('div.next').hide();
               return;
             }
           }
-          
-          element.find('div.answer').hide();
-          element.find('div.next').hide();
+  
+          toggle_answer(false); // display === false means, hide in any case
   
           next_question();
 

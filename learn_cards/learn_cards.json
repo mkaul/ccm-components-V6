@@ -1,6 +1,14 @@
-{"macro":[ { "question": "eine Charakterstruktur, die Starrheit in der Einstellung, der Zielsetzung oder der Meinung, Unbeweglichkeit und geringe Umstellungsbereitschaft als Verhaltenstendenzen",
-  "answer": "Rigidität" },
-  { "question": "eine sinnstiftende Erzählung, die Einfluss hat auf die Art, wie die Umwelt wahrgenommen wird. Es transportiert Werte und Emotionen, ist in der Regel auf einen Kulturkreis bezogen und unterliegt dem zeitlichen Wandel. In diesem Sinne sind es keine beliebigen Geschichten, sondern etablierte Erzählungen, die mit einer Legitimität versehen sind.",
-    "answer": "Narrativ" }
+{
+  "macro": [
+    {
+      "question": "eine Charakterstruktur, die Starrheit in der Einstellung, der Zielsetzung oder der Meinung, Unbeweglichkeit und geringe Umstellungsbereitschaft als Verhaltenstendenzen",
+      "answer": "Rigidität",
+      "source": "https://de.wikipedia.org/wiki/Rigidität"
+    },
+    {
+      "question": "eine sinnstiftende Erzählung, die Einfluss hat auf die Art, wie die Umwelt wahrgenommen wird. Es transportiert Werte und Emotionen, ist in der Regel auf einen Kulturkreis bezogen und unterliegt dem zeitlichen Wandel. In diesem Sinne sind es keine beliebigen Geschichten, sondern etablierte Erzählungen, die mit einer Legitimität versehen sind.",
+      "answer": "Narrativ",
+      "source": "https://de.wikipedia.org/wiki/Narrativ_(Sozialwissenschaften)"
+    }
   ]
 }

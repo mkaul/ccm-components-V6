@@ -39,3 +39,9 @@
     font-weight: lighter;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+.ccm-learn_cards img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}

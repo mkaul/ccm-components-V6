@@ -60,18 +60,12 @@ ccm.component( /** @lends ccm.components.learn_cards */ {
         return this.push.apply(this, rest);
       };
 
-      /**
-       * website area for own content
-       * @type {ccm.type.element}
-       */
-      var element = ccm.helper.element( this );
-
       // set content of own website area
       /**
        * website area for own content
        * @type {ccm.element}
        */
-      var element = ccm.helper.element( self ).html(
+      var $element = ccm.helper.element( self ).html(
         '<h2>Nennen Sie den passenden Begriff zu folgender Umschreibung:</h2>' +
         '<div class="card">' +
           '<div class="question"></div>' +
@@ -84,19 +78,19 @@ ccm.component( /** @lends ccm.components.learn_cards */ {
         '<button id="unknown" class="next">nicht gewusst</button>' +
         '</div>' );
       
-      var question_div = element.find('div.question');
-      var answer_div = element.find('div.answer');
+      var question_div = $element.find('div.question');
+      var answer_div = $element.find('div.answer');
       
       function toggle_answer(display){
-        element.find('div.answer').toggle(display);
-        element.find('div.source').toggle(display);
-        element.find('div.next').toggle(display);
+        $element.find('div.answer').toggle(display);
+        $element.find('div.source').toggle(display);
+        $element.find('div.next').toggle(display);
       }
   
       // initially hide answer area
       toggle_answer();
   
-      element.find('button.answer').click(function () {
+      $element.find('button.answer').click(function () {
         toggle_answer();
       });
   
@@ -117,14 +111,17 @@ ccm.component( /** @lends ccm.components.learn_cards */ {
          */
         var unknown = Array.apply(null, {length: dataset.length}).map(Number.call, Number);
   
+        /**
+         * render next random unkown question
+         */
         function next_question(){
-          
+          // choose index randomly
           index = Math.floor( unknown.length * Math.random() );
           var data = dataset[unknown[index]];
           question_div.html( data.question );
           answer_div.html( data.answer );
           if (data.source){
-            element.find('div.source').html(
+            $element.find('div.source').html(
               '<a href="' +
               data.source +
               '" target="_blank">' +
@@ -132,20 +129,20 @@ ccm.component( /** @lends ccm.components.learn_cards */ {
               '</a>'
             );
           } else {
-            element.find('div.source').html('');
+            $element.find('div.source').html('');
           }
         }
         
         next_question();
         
-        element.find('button.next').click(function () {
+        $element.find('button.next').click(function () {
   
           if ( jQuery(this).attr('id') === 'known' ){
             unknown.remove(index);
             if (unknown.length === 0){
-              element.find('div.card').html('<h1>Herzlichen Glückwunsch!</h1> <h1>Alles gewusst!</h1>');
-              element.find('h2').hide();
-              element.find('div.next').hide();
+              $element.find('div.card').html('<h1>Herzlichen Glückwunsch!</h1> <h1>Alles gewusst!</h1>');
+              $element.find('h2').hide();
+              $element.find('div.next').hide();
               return;
             }
           }

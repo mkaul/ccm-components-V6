@@ -23,7 +23,7 @@ ccm.component( /** @lends ccm.components.learn_cards */ {
     
     key: 'macro',
     store: [ ccm.store, '../learn_cards/learn_cards.json' ],
-    style: [ ccm.load, '../learn_cards/learn_cards.css' ]
+    style: [ ccm.load,  '../learn_cards/learn_cards.css'  ]
     
   },
 
@@ -81,12 +81,6 @@ ccm.component( /** @lends ccm.components.learn_cards */ {
       var question_div = $element.find('div.question');
       var answer_div = $element.find('div.answer');
       
-      function toggle_answer(display){
-        $element.find('div.answer').toggle(display);
-        $element.find('div.source').toggle(display);
-        $element.find('div.next').toggle(display);
-      }
-  
       // initially hide answer area
       toggle_answer();
   
@@ -110,6 +104,8 @@ ccm.component( /** @lends ccm.components.learn_cards */ {
          * @type {Array}
          */
         var unknown = Array.apply(null, {length: dataset.length}).map(Number.call, Number);
+        
+        next_question();
   
         /**
          * render next random unkown question
@@ -133,8 +129,6 @@ ccm.component( /** @lends ccm.components.learn_cards */ {
           }
         }
         
-        next_question();
-        
         $element.find('button.next').click(function () {
   
           if ( jQuery(this).attr('id') === 'known' ){
@@ -157,7 +151,13 @@ ccm.component( /** @lends ccm.components.learn_cards */ {
         if ( callback ) callback();
         
       } );
-
+  
+      function toggle_answer(display){
+        $element.find('div.answer').toggle(display);
+        $element.find('div.source').toggle(display);
+        $element.find('div.next').toggle(display);
+      }
+      
     }
 
   }

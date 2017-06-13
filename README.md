@@ -2,7 +2,7 @@
 
 [![Join the chat at https://gitter.im/mkaul/ccm-components](https://badges.gitter.im/mkaul/ccm-components.svg)](https://gitter.im/mkaul/ccm-components?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Documentation and Demos see [mkaul.github.io/ccm-components](http://mkaul.github.io/ccm-components/)
+Documentation and Demos see [mkaul.github.io/ccm-components](http://mkaul.github.io/ccm-components-V6/)
 
 ## 1. Componentizing the Web
 
@@ -23,7 +23,7 @@ The [W3C WebComponent Custom Element](http://www.w3.org/TR/custom-elements/) can
     
 
 ## 4. Usage: Open a html file in the browser
-No server required. Simply open one of the HTML files in the main directory in your browser with the file:// protocol. On the [GitHub Homepage of this repository](http://mkaul.github.io/ccm-components) you have all demos online without any installation. 
+No server required. Simply open one of the HTML files in the main directory in your browser with the file:// protocol. On the [GitHub Homepage of this repository](http://mkaul.github.io/ccm-components-V6) you have all demos online without any installation. 
 
 ## 5. Contact
 * [Homepage M. Kaul](https://www.h-brs.de/de/inf/prof-dr-manfred-kaul) 
